@@ -8,19 +8,19 @@
     ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Diego\\.nuget\\packages\\": {}
+    "C:\\Users\\ander\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diego\\Desktop\\Programacion\\Proyecto final prog 2\\ProyectoHotel\\Hotel.loc\\Hotel.loc.csproj",
+      "projectUniqueName": "E:\\clases\\Prog2\\Final\\ProyectoHotel\\Hotel.loc\\Hotel.loc.csproj",
       "projectName": "Hotel.loc",
-      "projectPath": "C:\\Users\\Diego\\Desktop\\Programacion\\Proyecto final prog 2\\ProyectoHotel\\Hotel.loc\\Hotel.loc.csproj",
-      "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diego\\Desktop\\Programacion\\Proyecto final prog 2\\ProyectoHotel\\Hotel.loc\\obj\\",
+      "projectPath": "E:\\clases\\Prog2\\Final\\ProyectoHotel\\Hotel.loc\\Hotel.loc.csproj",
+      "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
+      "outputPath": "E:\\clases\\Prog2\\Final\\ProyectoHotel\\Hotel.loc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -40,6 +40,9 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "default"
       }
     },
     "frameworks": {
@@ -61,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
       }
     }
   }

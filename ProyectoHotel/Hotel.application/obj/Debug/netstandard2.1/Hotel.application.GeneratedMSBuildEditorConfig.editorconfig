@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = Hotel.application
-build_property.ProjectDir = C:\Users\Diego\Desktop\Programacion\Proyecto final prog 2\ProyectoHotel\Hotel.application\
+build_property.ProjectDir = E:\clases\Prog2\Final\ProyectoHotel\Hotel.application\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
