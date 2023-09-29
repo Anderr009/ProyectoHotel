@@ -6,8 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Diagram\" />
-    <Folder Include="Repository\" />
+    <Compile Remove="Diagram\**" />
+    <EmbeddedResource Remove="Diagram\**" />
+    <None Remove="Diagram\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\" />
   </ItemGroup>
 
 </Project>

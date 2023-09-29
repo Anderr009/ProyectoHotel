@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2cJeShe1pB2J+cuCkelmqgcn5XJVhjf4wRRKq4MZhqr+MFk+GFLVaHuSFuEyRMNviDQrUYtESOlCDGlHayPKBw==",
+  "dgSpecHash": "VDwahWsbPZQXXSbFR/L+yCjOv4mKp6deOsL2p0x0S8G97kOuiTnq78xnd42eizfEGEgz71G80AER+qALSyWzuQ==",
   "success": true,
-  "projectFilePath": "E:\\clases\\Prog2\\Final\\ProyectoHotel\\Hotel.api\\Hotel.api.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\ander\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\ander\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\ander\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
-    "C:\\Users\\ander\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.20\\microsoft.netcore.app.host.win-x64.6.0.20.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.api\\Hotel.Api.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

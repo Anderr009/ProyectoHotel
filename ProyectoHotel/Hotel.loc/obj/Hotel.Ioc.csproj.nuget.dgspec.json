@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.loc\\Hotel.loc.csproj": {}
+    "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.loc\\Hotel.Ioc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.loc\\Hotel.loc.csproj": {
+    "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.loc\\Hotel.Ioc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.loc\\Hotel.loc.csproj",
-        "projectName": "Hotel.loc",
-        "projectPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.loc\\Hotel.loc.csproj",
+        "projectUniqueName": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.loc\\Hotel.Ioc.csproj",
+        "projectName": "Hotel.Ioc",
+        "projectPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.loc\\Hotel.Ioc.csproj",
         "packagesPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.loc\\obj\\",
         "projectStyle": "PackageReference",

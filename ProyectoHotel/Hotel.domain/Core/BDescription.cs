@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Hotel.domain.Core
 {
-    public abstract class Description: Status
+    public class BDescription: BaseEntity
     {
-        public string Descripcion { get; set; }
+        public string? Descripction { get; set; }
     }
 }
