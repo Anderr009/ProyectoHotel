@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.Domain.csproj": {}
+    "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.Domain.csproj": {
+    "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.Domain.csproj",
-        "projectName": "Hotel.Domain",
-        "projectPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj",
+        "projectName": "Hotel.domain",
+        "projectPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj",
         "packagesPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\obj\\",
         "projectStyle": "PackageReference",

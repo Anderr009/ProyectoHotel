@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.infrastructure\\Hotel.Infrastructure.csproj": {}
+    "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.infrastructure\\Hotel.infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.infrastructure\\Hotel.Infrastructure.csproj": {
+    "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.infrastructure\\Hotel.infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.infrastructure\\Hotel.Infrastructure.csproj",
-        "projectName": "Hotel.Infrastructure",
-        "projectPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.infrastructure\\Hotel.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.infrastructure\\Hotel.infrastructure.csproj",
+        "projectName": "Hotel.infrastructure",
+        "projectPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.infrastructure\\Hotel.infrastructure.csproj",
         "packagesPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.infrastructure\\obj\\",
         "projectStyle": "PackageReference",
