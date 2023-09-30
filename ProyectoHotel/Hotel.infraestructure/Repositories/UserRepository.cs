@@ -4,7 +4,7 @@ using System.Text;
 using Hotel.domain.Entities;
 using Hotel.Infraestructure.Interfaces;
 
-namespace Hotel.infraestructure.Models
+namespace Hotel.infraestructure.Repositories
 {
     public class UserRepository : IUserRepository
     {
