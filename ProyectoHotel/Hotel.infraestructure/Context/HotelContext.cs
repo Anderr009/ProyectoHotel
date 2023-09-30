@@ -17,3 +17,4 @@ namespace Hotel.infraestructure.Context
         public DbSet<Floor> Floors { get; set; }
         public DbSet<RolUser> RolUsers { get; set; }
     }
+}
