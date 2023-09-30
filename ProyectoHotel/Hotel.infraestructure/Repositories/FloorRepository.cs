@@ -4,31 +4,31 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Hotel.infraestructure.Models
+namespace Hotel.infraestructure.Repositories
 {
-    public class RolUserRepository : IRolUserRepository
+    public class FloorRepository : IFloorRepository
     {
-        public List<RolUser> GetEntities()
+        public List<Floor> GetEntities()
         {
             throw new NotImplementedException();
         }
 
-        public RolUser GetEntity(int Id)
+        public Floor GetEntity(int Id)
         {
             throw new NotImplementedException();
         }
 
-        public void Remove(RolUser entity)
+        public void Remove(Floor entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Save(RolUser entity)
+        public void Save(Floor entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(RolUser entity)
+        public void Update(Floor entity)
         {
             throw new NotImplementedException();
         }
