@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.web\\Hotel.web.csproj": {}
+    "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.web\\Hotel.web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.web\\Hotel.web.csproj": {
+    "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.web\\Hotel.web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.web\\Hotel.web.csproj",
+        "projectUniqueName": "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.web\\Hotel.web.csproj",
         "projectName": "Hotel.web",
-        "projectPath": "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.web\\Hotel.web.csproj",
+        "projectPath": "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.web\\Hotel.web.csproj",
         "packagesPath": "C:\\Users\\uriab\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.web\\obj\\",
         "projectStyle": "PackageReference",
@@ -39,6 +39,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.api\\Hotel.api.csproj": {}
+    "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.api\\Hotel.api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.api\\Hotel.api.csproj": {
+    "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.api\\Hotel.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.api\\Hotel.api.csproj",
+        "projectUniqueName": "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.api\\Hotel.api.csproj",
         "projectName": "Hotel.api",
-        "projectPath": "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.api\\Hotel.api.csproj",
+        "projectPath": "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.api\\Hotel.api.csproj",
         "packagesPath": "C:\\Users\\uriab\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.api\\obj\\",
+        "outputPath": "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\uriab\\AppData\\Roaming\\NuGet\\NuGet.Config",

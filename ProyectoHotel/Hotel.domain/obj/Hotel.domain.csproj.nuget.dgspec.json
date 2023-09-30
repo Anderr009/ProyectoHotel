@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj": {}
+    "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj": {
+    "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj",
+        "projectUniqueName": "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj",
         "projectName": "Hotel.domain",
-        "projectPath": "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj",
+        "projectPath": "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj",
         "packagesPath": "C:\\Users\\uriab\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\obj\\",
         "projectStyle": "PackageReference",
