@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\default.LAPTOP-4CBMH1H9\\.nuget\\packages\\": {},
+    "C:\\Users\\fdani\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.web\\Hotel.web.csproj",
+      "projectUniqueName": "C:\\Users\\fdani\\OneDrive\\Desktop\\Final programacion 2\\ProyectoHotel\\Hotel.web\\Hotel.web.csproj",
       "projectName": "Hotel.web",
-      "projectPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.web\\Hotel.web.csproj",
-      "packagesPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\default.LAPTOP-4CBMH1H9\\Desktop\\MyProyect\\ProyectoHotel\\ProyectoHotel\\Hotel.web\\obj\\",
+      "projectPath": "C:\\Users\\fdani\\OneDrive\\Desktop\\Final programacion 2\\ProyectoHotel\\Hotel.web\\Hotel.web.csproj",
+      "packagesPath": "C:\\Users\\fdani\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fdani\\OneDrive\\Desktop\\Final programacion 2\\ProyectoHotel\\Hotel.web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\default.LAPTOP-4CBMH1H9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fdani\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
