@@ -6,13 +6,13 @@ namespace Hotel.domain.Core
 {
     public abstract class BaseEntity
     {
-        public string? Status { get; set; }
-        public DateTime CreationDate { get; set; }
-        public int CreationUser { get; set; }
-        public DateTime? ModifyDate { get; set; }
-        public int? UserMod { get; set; }
-        public int? UserDeleted { get; set; }
-        public DateTime? DeletedDate { get; set; }
+        public bool? Status { get; set; }
+        public DateTime RegistrationDate { get; set; }
+        public int CreationUserId { get; set; }
+        public DateTime? ModDate { get; set; }
+        public int? ModUserId { get; set; }
+        public int? DeleteUserId { get; set; }
+        public DateTime? DeleteDate { get; set; }
         public bool Deleted { get; set; }
     }
 }
