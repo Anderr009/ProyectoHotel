@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Hotel.domain.Entities;
+using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Hotel.domain.Repository
@@ -11,5 +13,7 @@ namespace Hotel.domain.Repository
         void Remove(TEntity entity);
         List<TEntity> GetEntities();
         TEntity GetEntity(int Id);
+
+        bool Exists(Expression<Func<Reception, bool>> filter);
     }
 }

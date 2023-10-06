@@ -1,0 +1,9 @@
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.domain\bin\Debug\netstandard2.1\Hotel.domain.deps.json
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.domain\bin\Debug\netstandard2.1\Hotel.domain.dll
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.domain\bin\Debug\netstandard2.1\Hotel.domain.pdb
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.AssemblyInfoInputs.cache
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.AssemblyInfo.cs
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.csproj.CoreCompileInputs.cache
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.dll
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.pdb
