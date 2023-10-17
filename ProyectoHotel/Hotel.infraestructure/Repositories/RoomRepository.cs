@@ -1,21 +1,40 @@
 ﻿using Hotel.domain.Entities;
-using Hotel.Infraestructure.Interfaces;
+using Hotel.domain.Repository;
+using Hotel.Infraestructure.Context;
+using Microsoft.EntityFrameworkCore.Internal;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
-namespace Hotel.Infraestructure.Repositories
+namespace Hotel.infraestructure.Repositories
 {
     public class RoomRepository : IRoomRepository
     {
+        private readonly HotelContext _context;
+
+        public RoomRepository(HotelContext context)
+        {
+
+            _context = context;
+        }
+        public bool Exists(Expression<Func<Room, bool>> filter)
+        {
+            return _context.Rooms.Any(filter);
+        }
+
+
         public List<Room> GetEntities()
         {
-            throw new NotImplementedException();
+ 
+            return _context.Rooms.Where(room => !room.Removed).ToList();
         }
 
         public Room GetEntity(int id)
         {
-            throw new NotImplementedException();
+            return _context.Rooms.Find(id);
         }
 
         public void GetFloorByRoomId(Room entity)
@@ -28,19 +47,19 @@ namespace Hotel.Infraestructure.Repositories
             throw new NotImplementedException();
         }
 
-        public void Remove(Room entity)
+        public void Remove(Room room)
         {
-            throw new NotImplementedException();
+            _context.Rooms.Remove(room);
         }
 
-        public void Save(Room entity)
+        public void Save(Room room)
         {
-            throw new NotImplementedException();
+            _context.Rooms.Add(room);
         }
 
-        public void Update(Room entity)
+        public void Update(Room room)
         {
-            throw new NotImplementedException();
+            _context.Rooms.Update(room);
         }
     }
 }

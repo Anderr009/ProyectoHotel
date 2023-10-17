@@ -1,0 +1,10 @@
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.Ioc.deps.json
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.Ioc.dll
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.Ioc.pdb
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.AssemblyInfoInputs.cache
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.AssemblyInfo.cs
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.csproj.CoreCompileInputs.cache
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.sourcelink.json
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.dll
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.pdb

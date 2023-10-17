@@ -7,12 +7,12 @@ namespace Hotel.domain.Entities
 {
     public class Room : BaseEntity
     {
-        public int IDRoom { get; set; }
-        public int Number { get; set; }
-        public string Detail { get; set; }
-        public double Price { get; set; }
-        public int IdStatusRoom { get; set; }
-        public int IdFloor { get; set; }
-        public int IdCategory { get; set; }
+        public int RoomId { get; set; }
+        public string Number { get; set; }
+        public string? Detail { get; set; }
+        public decimal Price { get; set; }
+        public int RoomStateId{ get; set; }
+        public int FloorId { get; set; }
+        public int CategoryId { get; set; }
     }
 }

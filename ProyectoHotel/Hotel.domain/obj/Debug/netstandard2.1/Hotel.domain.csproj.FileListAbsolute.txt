@@ -1,0 +1,10 @@
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.domain\bin\Debug\netstandard2.1\Hotel.domain.deps.json
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.domain\bin\Debug\netstandard2.1\Hotel.domain.dll
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.domain\bin\Debug\netstandard2.1\Hotel.domain.pdb
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.AssemblyInfoInputs.cache
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.AssemblyInfo.cs
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.csproj.CoreCompileInputs.cache
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.sourcelink.json
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.dll
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.pdb

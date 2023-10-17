@@ -1,0 +1,14 @@
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\bin\Debug\netstandard2.1\Hotel.infraestructure.deps.json
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\bin\Debug\netstandard2.1\Hotel.infraestructure.dll
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\bin\Debug\netstandard2.1\Hotel.infraestructure.pdb
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\bin\Debug\netstandard2.1\Hotel.domain.dll
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\bin\Debug\netstandard2.1\Hotel.domain.pdb
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.csproj.AssemblyReference.cache
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.AssemblyInfoInputs.cache
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.AssemblyInfo.cs
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.csproj.CoreCompileInputs.cache
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.sourcelink.json
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.csproj.CopyComplete
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.dll
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.pdb
