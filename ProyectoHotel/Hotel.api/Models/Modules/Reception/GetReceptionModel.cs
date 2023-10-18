@@ -1,11 +1,6 @@
-﻿using Hotel.domain.Core;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Hotel.domain.Entities
+﻿namespace Hotel.api.Models.Modules.Reception
 {
-    public class Reception : BaseEntity
+    public class GetReceptionModel
     {
         public int ReceptionId { get; set; }
         public int? ClientId { get; set; }
@@ -18,6 +13,8 @@ namespace Hotel.domain.Entities
         public decimal? RemainingPrice { get; set; }
         public decimal? TotalPaid { get; set; }
         public decimal? CostPenalty { get; set; }
-        public string? Observation {  get; set; }
+        public string? Observation { get; set; }
+        public bool? State { get; set; }
+        public DateTime RegistrationDate { get; set; }
     }
 }

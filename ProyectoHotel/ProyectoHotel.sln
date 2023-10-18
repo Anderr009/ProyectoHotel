@@ -17,15 +17,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.application", "Hotel.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Ioc", "Hotel.loc\Hotel.Ioc.csproj", "{6C9E958D-46E5-4F28-A919-A97E99234B44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.infraestructure", "Hotel.infraestructure\Hotel.infraestructure.csproj", "{EB7C5003-4299-47CD-9164-CB994CFA924D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.infraestructure", "Hotel.infraestructure\Hotel.infraestructure.csproj", "{EB7C5003-4299-47CD-9164-CB994CFA924D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{FFCFBDC9-E2AA-4C9F-B28C-9070EE4552C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.api", "Hotel.api\Hotel.api.csproj", "{10439FF5-E964-410B-BBB4-61B6E8DC816E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.api", "Hotel.api\Hotel.api.csproj", "{10439FF5-E964-410B-BBB4-61B6E8DC816E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{B72C0582-7FC6-4F74-9738-27EAA54BE193}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.web", "Hotel.web\Hotel.web.csproj", "{AE40715D-5342-4E78-91BE-8B577C3AA7C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.web", "Hotel.web\Hotel.web.csproj", "{AE40715D-5342-4E78-91BE-8B577C3AA7C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
