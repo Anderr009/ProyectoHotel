@@ -20,37 +20,37 @@ namespace Hotel.infraestructure.Core
             this.context = context;
             this.entities = this.context.Set<TEntity>();
         }
-        public bool Exists(Expression<Func<TEntity, bool>> filter)
+        public virtual bool Exists(Expression<Func<TEntity, bool>> filter)
         {
             return this.entities.Any(filter);
         }
 
-        public List<TEntity> FindAll(Expression<Func<TEntity, bool>> filter)
+        public virtual List<TEntity> FindAll(Expression<Func<TEntity, bool>> filter)
         {
             return this.entities.Where(filter).ToList();
         }
 
-        public List<TEntity> GetEntities()
+        public virtual List<TEntity> GetEntities()
         {
             return entities.ToList();
         }
 
-        public TEntity GetEntity(int Id)
+        public virtual TEntity GetEntity(int Id)
         {
             return this.entities.Find(Id);
         }
 
-        public void Remove(TEntity entity)
+        public virtual void Remove(TEntity entity)
         {
             this.entities.Remove(entity);
         }
 
-        public void Save(TEntity entity)
+        public virtual void Save(TEntity entity)
         {
             this.entities.Add(entity);
         }
 
-        public void Update(TEntity entity)
+        public virtual void Update(TEntity entity)
         {
             this.entities.Update(entity);
         }

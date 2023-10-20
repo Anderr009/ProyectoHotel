@@ -18,5 +18,51 @@ namespace Hotel.infraestructure.Repositories
         {
             this.context = context;
         }
+
+        public List<Reception> GetReceptionByClient(int clientId)
+        {
+            return this.context.Receptions.Where(cd => cd.ClientId == clientId
+                                              && !cd.Removed).ToList();
+        }
+
+        public List<Reception> GetReceptionByRoom(int rommId)
+        {
+            return this.context.Receptions.Where(cd => cd.RoomId == rommId
+                                              && !cd.Removed).ToList();
+        }
+
+        public override List<Reception> GetEntities()
+        {
+            return base.GetEntities().Where(co => !co.Removed).ToList();
+        }
+
+        public override void Save(Reception entity)
+        {
+            context.Receptions.Add(entity);
+            context.SaveChanges();
+
+        }
+
+        public override void Update(Reception entity)
+        {
+            var receptionUpdate = base.GetEntity(entity.ReceptionId);
+            receptionUpdate.ClientId = entity.ClientId;
+            receptionUpdate.RoomId = entity.RoomId;
+            receptionUpdate.EntryDate = entity.EntryDate;
+            receptionUpdate.DepartureDate = entity.DepartureDate;
+            receptionUpdate.ConfirmationDepartureDate = entity.ConfirmationDepartureDate;
+            receptionUpdate.StartingPrice = entity.StartingPrice;
+            receptionUpdate.Advancement = entity.Advancement;
+            receptionUpdate.RemainingPrice = entity.RemainingPrice;
+            receptionUpdate.TotalPaid = entity.TotalPaid;
+            receptionUpdate.CostPenalty = entity.CostPenalty;
+            receptionUpdate.Observation = entity.Observation;
+            receptionUpdate.State = entity.State;
+            receptionUpdate.RegistrationDate = entity.RegistrationDate;
+            receptionUpdate.CreationUserId = entity.CreationUserId;
+
+            context.Receptions.Update(receptionUpdate);
+            context.SaveChanges();
+        }
     }
 }
