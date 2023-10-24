@@ -7,7 +7,7 @@ namespace Hotel.domain.Core
     public class PersonalInfo : BaseEntity
     {
         public string? FullName { get; set; }
-        public string? Email { get; set; }
+        public string? Mail { get; set; }
 
     }
 }

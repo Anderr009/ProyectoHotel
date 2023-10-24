@@ -26,9 +26,9 @@ namespace Hotel.api.Controllers
         }
 
         [HttpGet("GetReceptionByRoomId")]
-        public IActionResult GetReceptionByRoomId(int rommId)
+        public IActionResult GetReceptionByRoomId(int roomId)
         {
-            var receptions = this.receptionRepository.GetReceptionByRoom(rommId);
+            var receptions = this.receptionRepository.GetReceptionByRoom(roomId);
             return Ok(receptions);
         }
 

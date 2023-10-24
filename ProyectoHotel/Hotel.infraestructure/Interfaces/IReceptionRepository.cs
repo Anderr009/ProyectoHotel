@@ -10,6 +10,6 @@ namespace Hotel.infraestructure.Interfaces
     {
         List<Reception> GetReceptionByClient(int clientId);
 
-        List<Reception> GetReceptionByRoom(int clientId);
+        List<Reception> GetReceptionByRoom(int roomId);
     }
 }

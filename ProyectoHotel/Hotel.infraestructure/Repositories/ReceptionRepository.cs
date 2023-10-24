@@ -25,9 +25,9 @@ namespace Hotel.infraestructure.Repositories
                                               && !cd.Removed).ToList();
         }
 
-        public List<Reception> GetReceptionByRoom(int rommId)
+        public List<Reception> GetReceptionByRoom(int roomId)
         {
-            return this.context.Receptions.Where(cd => cd.RoomId == rommId
+            return this.context.Receptions.Where(cd => cd.RoomId == roomId
                                               && !cd.Removed).ToList();
         }
 
