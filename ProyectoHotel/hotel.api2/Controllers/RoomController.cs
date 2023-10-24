@@ -1,5 +1,7 @@
-﻿using Hotel.domain.Entities;
+﻿using hotel.api.Models.Modules.Room;
+using Hotel.domain.Entities;
 using Hotel.domain.Repository;
+using Hotel.infraestructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Globalization;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -16,37 +18,74 @@ namespace Hotel.api.Controllers
             this._roomRepository = roomRepository;
         }
         // GET: api/<RoomController>
-        [HttpGet]
-        public IEnumerable<Room> Get()
+        [HttpGet("GetRooms")]
+        public IActionResult Get()
         {
 
-            var rooms = this._roomRepository.GetEntities();
-            return rooms;
+            var rooms = this._roomRepository.GetEntities()
+                                            .Select(room => 
+                                            new GetRoomModel() 
+                                            { 
+                                                RoomId = room.RoomId,
+                                                Number = room.Number,
+                                                Detail =  room.Detail,
+                                                Price = room.Price,
+                                            });
+            return Ok(rooms);
         }
 
         // GET api/<RoomController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("GetRoom")]
+        public IActionResult Get(int id)
         {
-            return "value";
+            var room = this._roomRepository.GetEntity(id);
+            return Ok(room);
         }
 
         // POST api/<RoomController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("SaveRoom")]
+        public IActionResult Post([FromBody] AddRoomModel roomApp)
         {
+            this._roomRepository.Save(new Room()
+            {
+                CreationUserId = roomApp.ChangeUser,
+                Price = roomApp.Price,
+                State = roomApp.State,
+                CategoryId = roomApp.CategoryId,
+                FloorId = roomApp.CategoryId,
+                RegistrationDate = roomApp.ChangeDate,
+                Number = roomApp.Number,
+                Detail =  roomApp.Detail,
+                RoomStateId = roomApp.RoomStateId,
+            });
+            return Ok();
         }
 
         // PUT api/<RoomController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("UpdateRoom")]
+
+        public IActionResult Put(int id, [FromBody] UpdateRoomModel roomUpdate  )
         {
+            this._roomRepository.Update(new Room()
+            {
+                RoomId = roomUpdate.Id,
+                ModUserId = roomUpdate.ChangeUser,
+                Price = roomUpdate.Price,
+                State = roomUpdate.State,
+                CategoryId = roomUpdate.CategoryId,
+                FloorId = roomUpdate.CategoryId,
+                ModDate = roomUpdate.ChangeDate,
+                Number = roomUpdate.Number,
+                Detail = roomUpdate.Detail,
+                RoomStateId = roomUpdate .RoomStateId,
+            });
+            return Ok();
         }
 
-        // DELETE api/<RoomController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //// DELETE api/<RoomController>/5
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
     }
 }

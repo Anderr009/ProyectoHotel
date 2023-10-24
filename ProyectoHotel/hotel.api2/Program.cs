@@ -1,4 +1,5 @@
 using Hotel.domain.Repository;
+using Hotel.infraestructure.Interfaces;
 using Hotel.infraestructure.Repositories;
 using Hotel.Infraestructure.Context;
 using Microsoft.EntityFrameworkCore;

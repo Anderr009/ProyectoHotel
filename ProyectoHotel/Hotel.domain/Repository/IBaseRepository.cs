@@ -12,6 +12,8 @@ namespace Hotel.domain.Repository
         void Remove(TEntity entity);
         List<TEntity> GetEntities();
         TEntity GetEntity(int Id);
+        bool Exists(Expression<Func<TEntity, bool>> filter);
+        List<TEntity> FindAll(Expression<Func<TEntity, bool>> filter);
 
     }
 }
