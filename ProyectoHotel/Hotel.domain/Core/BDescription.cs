@@ -7,6 +7,5 @@ namespace Hotel.domain.Core
     public class BDescription: BaseEntity
     {
         public string? Description { get; set; }
-        public DateTime? CreationDate { get; set; }
     }
 }
