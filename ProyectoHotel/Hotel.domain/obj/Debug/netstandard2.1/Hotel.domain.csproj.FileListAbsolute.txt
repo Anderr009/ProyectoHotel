@@ -1,0 +1,10 @@
+C:\Users\benja\OneDrive\Desktop\Proyecto Hotel\ProyectoHotel\ProyectoHotel\Hotel.domain\bin\Debug\netstandard2.1\Hotel.domain.deps.json
+C:\Users\benja\OneDrive\Desktop\Proyecto Hotel\ProyectoHotel\ProyectoHotel\Hotel.domain\bin\Debug\netstandard2.1\Hotel.domain.dll
+C:\Users\benja\OneDrive\Desktop\Proyecto Hotel\ProyectoHotel\ProyectoHotel\Hotel.domain\bin\Debug\netstandard2.1\Hotel.domain.pdb
+C:\Users\benja\OneDrive\Desktop\Proyecto Hotel\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.csproj.AssemblyReference.cache
+C:\Users\benja\OneDrive\Desktop\Proyecto Hotel\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\benja\OneDrive\Desktop\Proyecto Hotel\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.AssemblyInfoInputs.cache
+C:\Users\benja\OneDrive\Desktop\Proyecto Hotel\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.AssemblyInfo.cs
+C:\Users\benja\OneDrive\Desktop\Proyecto Hotel\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.csproj.CoreCompileInputs.cache
+C:\Users\benja\OneDrive\Desktop\Proyecto Hotel\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.dll
+C:\Users\benja\OneDrive\Desktop\Proyecto Hotel\ProyectoHotel\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.pdb

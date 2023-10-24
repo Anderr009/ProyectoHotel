@@ -1,36 +1,45 @@
 ﻿using Hotel.domain.Entities;
+using Hotel.infraestructure.Context;
+using Hotel.infraestructure.Core;
 using Hotel.infraestructure.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Hotel.infraestructure.Repositories
 {
-    public class FloorRepository : IFloorRepository
+    public class FloorRepository : BaseRepository<Floor>, IFloorRepository
     {
-        public List<Floor> GetEntities()
+        private readonly HotelContext context;
+
+        public FloorRepository(HotelContext context) : base(context)
         {
-            throw new NotImplementedException();
+            this.context = context;
         }
 
-        public Floor GetEntity(int Id)
+        public override List<Floor> GetEntities()
         {
-            throw new NotImplementedException();
+            return base.GetEntities().Where(co => !co.Removed).ToList();
         }
 
-        public void Remove(Floor entity)
+        public override void Save(Floor entity)
         {
-            throw new NotImplementedException();
+            context.Floors.Add(entity);
+            context.SaveChanges();
+
         }
 
-        public void Save(Floor entity)
+        public override void Update(Floor entity)
         {
-            throw new NotImplementedException();
-        }
+            var floorUpdate = base.GetEntity(entity.FloorId);
+            floorUpdate.State = entity.State;
+            floorUpdate.RegistrationDate = entity.RegistrationDate;
+            floorUpdate.CreationUserId = entity.CreationUserId;
+            floorUpdate.Description = entity.Description;
 
-        public void Update(Floor entity)
-        {
-            throw new NotImplementedException();
+            context.Floors.Update(floorUpdate);
+            context.SaveChanges();
         }
     }
 }

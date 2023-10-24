@@ -8,6 +8,5 @@ namespace Hotel.domain.Core
     {
         public string? FullName { get; set; }
         public string? Mail { get; set; }
-
     }
 }

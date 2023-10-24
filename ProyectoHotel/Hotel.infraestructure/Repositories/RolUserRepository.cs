@@ -1,36 +1,46 @@
 ﻿using Hotel.domain.Entities;
+using Hotel.infraestructure.Context;
+using Hotel.infraestructure.Core;
 using Hotel.infraestructure.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Hotel.infraestructure.Repositories
 {
-    public class RolUserRepository : IRolUserRepository
+    public class RolUserRepository : BaseRepository<RolUser>, IRolUserRepository
     {
-        public List<RolUser> GetEntities()
+        private readonly HotelContext context;
+
+        public RolUserRepository(HotelContext context) : base(context)
         {
-            throw new NotImplementedException();
+            this.context = context;
         }
 
-        public RolUser GetEntity(int Id)
+        public override List<RolUser> GetEntities()
         {
-            throw new NotImplementedException();
+            return base.GetEntities().Where(co => !co.Removed).ToList();
         }
 
-        public void Remove(RolUser entity)
+        public override void Save(RolUser entity)
         {
-            throw new NotImplementedException();
+            context.UserRoles.Add(entity);
+            context.SaveChanges();
+
         }
 
-        public void Save(RolUser entity)
+        public override void Update(RolUser entity)
         {
-            throw new NotImplementedException();
-        }
+            var roluserUpdate = base.GetEntity(entity.UserRoleId);
+            roluserUpdate.State = entity.State;
+            roluserUpdate.RegistrationDate = entity.RegistrationDate;
+            roluserUpdate.CreationUserId = entity.CreationUserId;
+            roluserUpdate.Description = entity.Description;
 
-        public void Update(RolUser entity)
-        {
-            throw new NotImplementedException();
+            context.UserRoles.Update(roluserUpdate);
+            context.SaveChanges();
         }
     }
 }
