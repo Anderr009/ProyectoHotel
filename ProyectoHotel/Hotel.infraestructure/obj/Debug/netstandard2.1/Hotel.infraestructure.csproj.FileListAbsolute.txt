@@ -1,0 +1,13 @@
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.infraestructure\bin\Debug\netstandard2.1\Hotel.infraestructure.deps.json
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.infraestructure\bin\Debug\netstandard2.1\Hotel.infraestructure.dll
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.infraestructure\bin\Debug\netstandard2.1\Hotel.infraestructure.pdb
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.infraestructure\bin\Debug\netstandard2.1\Hotel.domain.dll
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.infraestructure\bin\Debug\netstandard2.1\Hotel.domain.pdb
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.csproj.AssemblyReference.cache
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.AssemblyInfoInputs.cache
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.AssemblyInfo.cs
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.csproj.CopyComplete
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.dll
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.infraestructure\obj\Debug\netstandard2.1\Hotel.infraestructure.pdb

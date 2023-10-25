@@ -6,6 +6,7 @@ namespace Hotel.domain.Core
 {
     public class BDescription: BaseEntity
     {
-        public string? Descripction { get; set; }
+        public string? Description { get; set; }
+ 
     }
 }

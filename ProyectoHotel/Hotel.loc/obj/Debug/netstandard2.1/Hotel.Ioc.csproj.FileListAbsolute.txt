@@ -1,0 +1,9 @@
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.Ioc.deps.json
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.Ioc.dll
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.Ioc.pdb
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.AssemblyInfoInputs.cache
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.AssemblyInfo.cs
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.csproj.CoreCompileInputs.cache
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.dll
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.pdb

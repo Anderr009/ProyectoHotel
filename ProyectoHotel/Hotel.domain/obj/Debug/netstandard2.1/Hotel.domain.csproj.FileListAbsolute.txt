@@ -1,0 +1,9 @@
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.domain\bin\Debug\netstandard2.1\Hotel.domain.deps.json
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.domain\bin\Debug\netstandard2.1\Hotel.domain.dll
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.domain\bin\Debug\netstandard2.1\Hotel.domain.pdb
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.AssemblyInfoInputs.cache
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.AssemblyInfo.cs
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.csproj.CoreCompileInputs.cache
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.dll
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.domain\obj\Debug\netstandard2.1\Hotel.domain.pdb

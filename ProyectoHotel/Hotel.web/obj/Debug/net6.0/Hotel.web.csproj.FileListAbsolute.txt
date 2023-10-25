@@ -1,0 +1,7 @@
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.AssemblyInfoInputs.cache
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.AssemblyInfo.cs
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.csproj.CoreCompileInputs.cache
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.RazorAssemblyInfo.cache
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.RazorAssemblyInfo.cs

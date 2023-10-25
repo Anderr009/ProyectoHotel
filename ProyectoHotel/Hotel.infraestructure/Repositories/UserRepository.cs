@@ -1,36 +1,54 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Hotel.domain.Entities;
+﻿using Hotel.domain.Entities;
+using Hotel.infraestructure.Core;
+using Hotel.Infraestructure.Context;
 using Hotel.Infraestructure.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Text;
 
 namespace Hotel.infraestructure.Repositories
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : BaseRepository<User>, IUserRepository
     {
-        public List<User> GetEntities()
+        private readonly HotelContext context;
+
+        public UserRepository(HotelContext context) : base(context)
         {
-            throw new NotImplementedException();
+            this.context = context;
         }
 
-        public User GetEntity(int Id)
+        public List<User> GetUsersByRole(int UserRoleId)
         {
-            throw new NotImplementedException();
+            return this.context.Users.Where(rl => rl.UserRoleId == UserRoleId && !rl.Removed).ToList();
         }
 
-        public void Remove(User entity)
+        public override List<User> GetEntities()
         {
-            throw new NotImplementedException();
+            return base.GetEntities().Where(us => !us.Removed).ToList();
         }
 
-        public void Save(User entity)
+        public override void Save(User entity)
         {
-            throw new NotImplementedException();
+            context.Users.Add(entity);
+            context.SaveChanges();
+
         }
 
-        public void Update(User entity)
+        public override void Update(User entity)
         {
-            throw new NotImplementedException();
+            var UserUpdate = base.GetEntity(entity.UserID);
+            UserUpdate.FullName = entity.FullName;
+            UserUpdate.Mail = entity.Mail;
+            UserUpdate.UserRoleId = entity.UserRoleId;
+            UserUpdate.Clue = entity.Clue;
+            UserUpdate.State = entity.State;
+            UserUpdate.RegistrationDate = entity.RegistrationDate;
+            UserUpdate.CreationUserId = entity.CreationUserId;
+
+            context.Users.Update(UserUpdate);
+            context.SaveChanges();
         }
     }
 }

@@ -8,6 +8,6 @@ namespace Hotel.Infraestructure.Interfaces
 {
     public interface IUserRepository : IBaseRepository<User>
     {
-
+        List<User> GetUsersByRole(int userRoleId);
     }
 }

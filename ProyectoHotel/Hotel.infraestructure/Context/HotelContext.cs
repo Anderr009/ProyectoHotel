@@ -13,6 +13,6 @@ namespace Hotel.Infraestructure.Context
 
         }
 
-        public DbSet<User> users { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
