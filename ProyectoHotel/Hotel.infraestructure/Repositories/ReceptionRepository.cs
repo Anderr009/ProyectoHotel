@@ -64,5 +64,18 @@ namespace Hotel.infraestructure.Repositories
             context.Receptions.Update(receptionUpdate);
             context.SaveChanges();
         }
+        public override void Remove(Reception entity)
+        {
+            var ReceptionToRemove = base.GetEntity(entity.ReceptionId);
+
+            ReceptionToRemove.ReceptionId = entity.ReceptionId;
+            ReceptionToRemove.Removed = entity.Removed;
+            ReceptionToRemove.DateDeleted = entity.DateDeleted;
+            ReceptionToRemove.DeletedUserId = entity.DeletedUserId;
+
+            this.context.Receptions.Update(ReceptionToRemove);
+            this.context.SaveChanges();
+
+        }
     }
 }

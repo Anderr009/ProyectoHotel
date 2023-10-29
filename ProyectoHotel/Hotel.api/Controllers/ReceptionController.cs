@@ -1,4 +1,6 @@
 ﻿using Hotel.api.Models.Modules.Reception;
+using Hotel.application.Contracts;
+using Hotel.application.Dtos.Reception;
 using Hotel.domain.Entities;
 using Hotel.infraestructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -11,13 +13,13 @@ namespace Hotel.api.Controllers
     [ApiController]
     public class ReceptionController : ControllerBase
     {
-        private readonly IReceptionRepository receptionRepository;
+        private readonly IReceptionService receptionService;
 
-        public ReceptionController(IReceptionRepository receptionRepository) 
+        public ReceptionController(IReceptionService receptionService) 
         {
-            this.receptionRepository = receptionRepository;
+            this.receptionService = receptionService;
         }
-
+        /*
         [HttpGet("GetReceptionByClientId")]
         public IActionResult GetReceptionByClientId(int clientId)
         {
@@ -31,92 +33,65 @@ namespace Hotel.api.Controllers
             var receptions = this.receptionRepository.GetReceptionByRoom(roomId);
             return Ok(receptions);
         }
+        */
 
         // GET: api/<ReceptionController>
         [HttpGet("GetReceptions")]
         public IActionResult Get()
         {
-            var receptions = this.receptionRepository.GetEntities().Select(rc => new ReceptionGetAllModel() 
-            {
-                ChangeUser = rc.CreationUserId,
-                ChanageDate = rc.RegistrationDate,
-                State = rc.State,
-                Observation = rc.Observation,
-                CostPenalty = rc.CostPenalty,
-                TotalPaid = rc.TotalPaid,
-                RemainingPrice = rc.RemainingPrice,
-                Advancement = rc.Advancement,
-                StartingPrice = rc.StartingPrice,
-                ConfirmationDepartureDate = rc.ConfirmationDepartureDate,
-                DepartureDate = rc.DepartureDate,
-                EntryDate = rc.EntryDate,
-                RoomId = rc.RoomId,
-                ClientId = rc.ClientId,
-                ReceptionId = rc.ReceptionId
-            }).ToList();
+            var result = this.receptionService.GetAll();
 
-            return Ok(receptions);
+            if (!result.Success) 
+                return BadRequest(result);
+
+            return Ok(result);
         }
 
         // GET api/<ReceptionController>/5
         [HttpGet("GetReception")]
         public IActionResult GetReception(int id)
         {
-            var Reception = this.receptionRepository.GetEntity(id);
-            return Ok(Reception);
+            var result = this.receptionService.GetById(id);
+
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
         }
 
         // POST api/<ReceptionController>
         [HttpPost("SaveReception")]
-        public IActionResult Post([FromBody] ReceptionAddModel receptionAdd)
+        public IActionResult Post([FromBody] ReceptionDtoAdd receptionAdd)
         {
-            Reception reception = new Reception()
-            {
-                CreationUserId = receptionAdd.ChangeUser,
-                RegistrationDate = receptionAdd.ChanageDate,
-                State = receptionAdd.State,
-                Observation = receptionAdd.Observation,
-                CostPenalty = receptionAdd.CostPenalty,
-                TotalPaid = receptionAdd.TotalPaid,
-                RemainingPrice = receptionAdd.RemainingPrice,
-                Advancement = receptionAdd.Advancement,
-                StartingPrice = receptionAdd.StartingPrice,
-                ConfirmationDepartureDate = receptionAdd.ConfirmationDepartureDate,
-                DepartureDate = receptionAdd.DepartureDate,
-                EntryDate = receptionAdd.EntryDate,
-                RoomId = receptionAdd.RoomId,
-                ClientId = receptionAdd.ClientId
-            };
-            this.receptionRepository.Save(reception);
+            var result = this.receptionService.Save(receptionAdd);
 
-            return Ok();
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
         }
 
         // PUT api/<ReceptionController>/5
         [HttpPut("UpdateReception")]
-        public IActionResult Put([FromBody] ReceptionUpdateModel receptionUpdate)
+        public IActionResult Put([FromBody] ReceptionDtoUpdate receptionUpdate)
         {
-            Reception reception = new Reception()
-            {
-                CreationUserId = receptionUpdate.ChangeUser,
-                RegistrationDate = receptionUpdate.ChanageDate,
-                State = receptionUpdate.State,
-                Observation = receptionUpdate.Observation,
-                CostPenalty = receptionUpdate.CostPenalty,
-                TotalPaid = receptionUpdate.TotalPaid,
-                RemainingPrice = receptionUpdate.RemainingPrice,
-                Advancement = receptionUpdate.Advancement,
-                StartingPrice = receptionUpdate.StartingPrice,
-                ConfirmationDepartureDate = receptionUpdate.ConfirmationDepartureDate,
-                DepartureDate = receptionUpdate.DepartureDate,
-                EntryDate = receptionUpdate.EntryDate,
-                RoomId = receptionUpdate.RoomId,
-                ClientId = receptionUpdate.ClientId,
-                ReceptionId = receptionUpdate.ReceptionId
-            };
-            this.receptionRepository.Update(reception);
+            var result = this.receptionService.Update(receptionUpdate);
 
-            return Ok();
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
+        }
+        [HttpPost("RemoveReception")]
+        public IActionResult Remove([FromBody] ReceptionDtoRemove receptionDtoRemove)
+        {
+            var result = this.receptionService.Remove(receptionDtoRemove);
+
+            if (!result.Success)
+                return BadRequest(result);
+
+
+            return Ok(result);
         }
     }
 }

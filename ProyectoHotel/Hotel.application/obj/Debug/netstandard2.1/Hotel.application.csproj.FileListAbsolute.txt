@@ -7,3 +7,9 @@ C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\H
 C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.csproj.CoreCompileInputs.cache
 C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.dll
 C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.pdb
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.domain.dll
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.infraestructure.dll
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.infraestructure.pdb
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.domain.pdb
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.csproj.AssemblyReference.cache
+C:\Users\default.LAPTOP-4CBMH1H9\Desktop\MyProyect\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.csproj.CopyComplete
