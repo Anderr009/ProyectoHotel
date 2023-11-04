@@ -4,6 +4,7 @@ using Hotel.application.Dtos.Reception;
 using Hotel.application.Response;
 using Hotel.domain.Entities;
 using Hotel.infraestructure.Interfaces;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Linq;
@@ -14,11 +15,15 @@ namespace Hotel.application.Services
     {
         private readonly IReceptionRepository receptionRepository;
         private readonly ILogger<ReceptionService> logger;
+        private readonly IConfiguration configuration;
 
-        public ReceptionService(IReceptionRepository receptionRepository, ILogger<ReceptionService> logger) 
+        public ReceptionService(IReceptionRepository receptionRepository, 
+                                ILogger<ReceptionService> logger, 
+                                IConfiguration configuration) 
         {
             this.receptionRepository = receptionRepository;
             this.logger = logger;
+            this.configuration = configuration;
         }
         public ServiceResult GetAll()
         {
@@ -48,7 +53,7 @@ namespace Hotel.application.Services
             catch (Exception ex) 
             {
                 result.Success = false;
-                result.Message = $"Ocurrio un error obteniendo las recepciones.";
+                result.Message = this.configuration["ErrorRecepcion:GetErrorMessage"];
                 this.logger.LogError(result.Message, ex.ToString());
             }
             return result;
@@ -82,8 +87,7 @@ namespace Hotel.application.Services
             }
             catch (Exception ex)
             {
-                result.Success = false;
-                result.Message = $"Ocurrio un error obteniendo la recepcion.";
+                result.Message = this.configuration["ErrorRecepcion:GetByIdErrorMessage"];
                 this.logger.LogError(result.Message, ex.ToString());
             }
 
@@ -106,12 +110,12 @@ namespace Hotel.application.Services
 
                 this.receptionRepository.Remove(reception);
 
-                result.Message = "La recepcion fue removida";
+                result.Message = this.configuration["MensajesRecepcionSuccess:RemoveSuccessMessage"];
             }
             catch (Exception ex) 
             {
                 result.Success = false;
-                result.Message = $"Ocurrio un error Removiendo la recepcion.";
+                result.Message = this.configuration["ErrorRecepcion:RemoveErrorMessage"];
                 this.logger.LogError(result.Message, ex.ToString());
             }
             return result;
@@ -123,6 +127,37 @@ namespace Hotel.application.Services
             ReceptionResponse result = new ReceptionResponse();
             try
             {
+
+                //Validaciones
+
+                if (dtoAdd.ClientId <= 0) 
+                {
+                    result.Message = this.configuration["MensajeValidaciones:RecepcionValorCliente"];
+                    result.Success = false;
+                    return result;
+                }
+
+                if (dtoAdd.RoomId <= 0)
+                {
+                    result.Message = this.configuration["MensajeValidaciones:RcepcionValorRoom"];
+                    result.Success = false;
+                    return result;
+                }
+
+                if (dtoAdd.EntryDate >= dtoAdd.DepartureDate)
+                {
+                    result.Message = this.configuration["MensajeValidaciones:RecepcionFechaSalida"];
+                    result.Success = false;
+                    return result;
+                }
+
+                if (dtoAdd.StartingPrice < 0 || dtoAdd.Advancement < 0 || dtoAdd.RemainingPrice < 0 || dtoAdd.TotalPaid < 0 || dtoAdd.CostPenalty < 0)
+                {
+                    result.Message = this.configuration["MensajeValidaciones:RerepcionPrecioNegativo"];
+                    result.Success = false;
+                    return result;
+                }
+
                 Reception reception = new Reception()
                 {
                     CreationUserId = dtoAdd.ChangeUser,
@@ -143,13 +178,13 @@ namespace Hotel.application.Services
 
                 this.receptionRepository.Save(reception);
 
-                result.Message = "La recepcion fue creado correctamente.";
+                result.Message = this.configuration["MensajesRecepcionSuccess:AddSuccessMessage"];
                 result.ReceptionId = reception.ReceptionId;
             }
             catch (Exception ex)
             {
                 result.Success = false;
-                result.Message = $"Ocurrio un error guardando la recepcion.";
+                result.Message = this.configuration["ErrorRecepcion:AddErrorMessage"];
                 this.logger.LogError(result.Message, ex.ToString());
             }
             return result;
@@ -161,6 +196,37 @@ namespace Hotel.application.Services
 
             try
             {
+
+                //Validaciones
+
+                if (dtoUpdate.ClientId <= 0)
+                {
+                    result.Message = this.configuration["MensajeValidaciones:RecepcionValorCliente"];
+                    result.Success = false;
+                    return result;
+                }
+
+                if (dtoUpdate.RoomId <= 0)
+                {
+                    result.Message = this.configuration["MensajeValidaciones:RcepcionValorRoom"];
+                    result.Success = false;
+                    return result;
+                }
+
+                if (dtoUpdate.EntryDate >= dtoUpdate.DepartureDate)
+                {
+                    result.Message = this.configuration["MensajeValidaciones:RecepcionFechaSalida"];
+                    result.Success = false;
+                    return result;
+                }
+
+                if (dtoUpdate.StartingPrice < 0 || dtoUpdate.Advancement < 0 || dtoUpdate.RemainingPrice < 0 || dtoUpdate.TotalPaid < 0 || dtoUpdate.CostPenalty < 0)
+                {
+                    result.Message = this.configuration["MensajeValidaciones:RerepcionPrecioNegativo"];
+                    result.Success = false;
+                    return result;
+                }
+
                 Reception reception = new Reception()
                 {
                     CreationUserId = dtoUpdate.ChangeUser,
@@ -182,12 +248,12 @@ namespace Hotel.application.Services
 
                 this.receptionRepository.Update(reception);
 
-                result.Data = "La recepcion fue actualizada correctamente";
+                result.Data = this.configuration["MensajesRecepcionSuccess:UpdateSuccessMessage"];
             }
             catch (Exception ex)
             {
                 result.Success = false;
-                result.Message = $"Ocurrio un error actualizando la recepcion.";
+                result.Message = this.configuration["ErrorRecepcion:UpdateErrorMessage"];
                 this.logger.LogError(result.Message, ex.ToString());
             }
             return result;
