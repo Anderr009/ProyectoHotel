@@ -6,18 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Core\**" />
     <Compile Remove="Exceptions\**" />
     <Compile Remove="Interfaces\**" />
-    <Compile Remove="Repositories\**" />
-    <EmbeddedResource Remove="Core\**" />
     <EmbeddedResource Remove="Exceptions\**" />
     <EmbeddedResource Remove="Interfaces\**" />
-    <EmbeddedResource Remove="Repositories\**" />
-    <None Remove="Core\**" />
     <None Remove="Exceptions\**" />
     <None Remove="Interfaces\**" />
-    <None Remove="Repositories\**" />
   </ItemGroup>
 
   <ItemGroup>

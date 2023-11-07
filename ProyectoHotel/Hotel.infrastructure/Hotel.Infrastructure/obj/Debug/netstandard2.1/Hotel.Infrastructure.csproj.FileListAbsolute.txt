@@ -1,0 +1,13 @@
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.infrastructure\Hotel.Infrastructure\bin\Debug\netstandard2.1\Hotel.Infrastructure.deps.json
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.infrastructure\Hotel.Infrastructure\bin\Debug\netstandard2.1\Hotel.Infrastructure.dll
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.infrastructure\Hotel.Infrastructure\bin\Debug\netstandard2.1\Hotel.Infrastructure.pdb
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.infrastructure\Hotel.Infrastructure\bin\Debug\netstandard2.1\Hotel.domain.dll
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.infrastructure\Hotel.Infrastructure\bin\Debug\netstandard2.1\Hotel.domain.pdb
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.infrastructure\Hotel.Infrastructure\obj\Debug\netstandard2.1\Hotel.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.infrastructure\Hotel.Infrastructure\obj\Debug\netstandard2.1\Hotel.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.infrastructure\Hotel.Infrastructure\obj\Debug\netstandard2.1\Hotel.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.infrastructure\Hotel.Infrastructure\obj\Debug\netstandard2.1\Hotel.Infrastructure.AssemblyInfo.cs
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.infrastructure\Hotel.Infrastructure\obj\Debug\netstandard2.1\Hotel.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.infrastructure\Hotel.Infrastructure\obj\Debug\netstandard2.1\Hotel.Infrastructure.csproj.CopyComplete
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.infrastructure\Hotel.Infrastructure\obj\Debug\netstandard2.1\Hotel.Infrastructure.dll
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.infrastructure\Hotel.Infrastructure\obj\Debug\netstandard2.1\Hotel.Infrastructure.pdb

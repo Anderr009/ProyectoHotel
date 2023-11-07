@@ -3,16 +3,16 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:24789",
+      "applicationUrl": "http://localhost:63342",
       "sslPort": 0
     }
   },
   "profiles": {
-    "Hotel.web": {
+    "Hotel.Web": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:5072",
+      "applicationUrl": "http://localhost:5199",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

@@ -5,12 +5,10 @@ using System.Text;
 
 namespace Hotel.domain.Entities
 {
-    public class Client : PersonalInfo
+    public class Client: PersonalInfo
     {
-        public int IdClient { get; set; }
-        public string? TypeDocument { get; set; }
+        public int ClientId { get; set; }
+        public string? DocumentType { get; set; }
         public string? Document { get; set; }
-
-
     }
 }
