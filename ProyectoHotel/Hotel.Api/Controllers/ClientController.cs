@@ -50,15 +50,16 @@ namespace Hotel.Api.Controllers
          [HttpPost("SaveClient")]
         public IActionResult Post([FromBody] AddClientModel clientApp)
         {
-        
-            //this.clientRepository.Save(new Client()
-            //{
-            //    FullName = clientApp.FullName,
-            //    Document = clientApp.Document,
-            //    DocumentType = clientApp.DocumentType,
-            //    Mail = clientApp.Mail,
-            //    State = clientApp.State,
-            //});
+
+            this.clientRepository.Save(new domain.Entities.Client()
+            {
+                FullName = clientApp.FullName,
+                RegistrationDate = clientApp.ChangeDate,
+                Document = clientApp.Document,
+                DocumentType = clientApp.DocumentType,
+                Mail = clientApp.Mail,
+                State = clientApp.State,
+            });
 
 
 
@@ -67,8 +68,20 @@ namespace Hotel.Api.Controllers
 
         // PUT api/<ClientController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public IActionResult Put(int id, [FromBody] ClientUpdateModel clientUpdate)
         {
+            this.clientRepository.Update(new domain.Entities.Client
+            {
+                ClientId = clientUpdate.ClientId,
+                ModDate= clientUpdate.ChangeDate,
+                ModUserId = clientUpdate.ChangeUser,
+                FullName = clientUpdate.FullName,
+                Document = clientUpdate.Document,
+                DocumentType = clientUpdate.DocumentType,
+                Mail = clientUpdate.Mail,
+                State = clientUpdate.State,
+            });
+            return Ok();
         }
 
         // DELETE api/<ClientController>/5
