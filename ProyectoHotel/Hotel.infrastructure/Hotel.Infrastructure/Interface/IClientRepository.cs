@@ -8,6 +8,7 @@ namespace Hotel.Infrastructure.Interface
 {
     public interface IClientRepository : IBaseRepository<Client>
     {
-       
+        List<Client> GetReceptionByClient(int clientId);
+        List<Client> GetReceptionByRoom(int clientId);
     }
 }

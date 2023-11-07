@@ -1,0 +1,13 @@
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.Ioc.deps.json
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.Ioc.dll
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.Ioc.pdb
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.domain.dll
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.domain.pdb
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.csproj.AssemblyReference.cache
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.AssemblyInfoInputs.cache
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.AssemblyInfo.cs
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.csproj.CoreCompileInputs.cache
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.csproj.CopyComplete
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.dll
+C:\Users\uriab\source\repos\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.pdb

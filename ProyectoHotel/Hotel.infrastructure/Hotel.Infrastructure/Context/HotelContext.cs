@@ -12,6 +12,6 @@ namespace Hotel.Infrastructure.Context
          {
 
          }
-        public DbSet<Client> clients { get; set; }
+        public DbSet<Client> Clients { get; set; }
     }
 }

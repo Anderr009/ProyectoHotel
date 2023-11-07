@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.application\\Hotel.application.csproj",
+      "projectUniqueName": "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.application\\Hotel.application.csproj",
       "projectName": "Hotel.application",
-      "projectPath": "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.application\\Hotel.application.csproj",
+      "projectPath": "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.application\\Hotel.application.csproj",
       "packagesPath": "C:\\Users\\uriab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\uriab\\Source\\Repos\\ProyectoHotel\\ProyectoHotel\\Hotel.application\\obj\\",
+      "outputPath": "C:\\Users\\uriab\\source\\repos\\ProyectoHotel\\ProyectoHotel\\Hotel.application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\uriab\\AppData\\Roaming\\NuGet\\NuGet.Config",
