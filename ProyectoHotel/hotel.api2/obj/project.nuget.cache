@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YbiGr+2ygE5I8HAOwvC0hZhrX6wx7fBN+/BB2zYMWTgnjmnaYGyjynldbMi/BA6EWY7yCLIx7VC887gJko2+MQ==",
+  "dgSpecHash": "uwZ+t8F1ZrsWVKiS2FdeGg4FqndldhFyrZ9Qi1y7D8dx6QqKaGV+WyvQGYloya1OwvkmB2w5X5re3irjWUjYkg==",
   "success": true,
   "projectFilePath": "E:\\clases\\Prog2\\Final\\ProyectoHotel\\ProyectoHotel\\hotel.api2\\hotel.api.csproj",
   "expectedPackageFiles": [
@@ -20,8 +20,8 @@
     "C:\\Users\\ander\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.32\\microsoft.extensions.configuration.3.1.32.nupkg.sha512",
     "C:\\Users\\ander\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.32\\microsoft.extensions.configuration.abstractions.3.1.32.nupkg.sha512",
     "C:\\Users\\ander\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.32\\microsoft.extensions.configuration.binder.3.1.32.nupkg.sha512",
-    "C:\\Users\\ander\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.32\\microsoft.extensions.dependencyinjection.3.1.32.nupkg.sha512",
-    "C:\\Users\\ander\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.32\\microsoft.extensions.dependencyinjection.abstractions.3.1.32.nupkg.sha512",
+    "C:\\Users\\ander\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\ander\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\ander\\.nuget\\packages\\microsoft.extensions.logging\\3.1.32\\microsoft.extensions.logging.3.1.32.nupkg.sha512",
     "C:\\Users\\ander\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.32\\microsoft.extensions.logging.abstractions.3.1.32.nupkg.sha512",
     "C:\\Users\\ander\\.nuget\\packages\\microsoft.extensions.options\\3.1.32\\microsoft.extensions.options.3.1.32.nupkg.sha512",

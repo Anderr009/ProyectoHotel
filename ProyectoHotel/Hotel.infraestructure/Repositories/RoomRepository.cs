@@ -47,5 +47,19 @@ namespace Hotel.infraestructure.Repositories
             _context.Rooms.Update(roomToUpdate);
             _context.SaveChanges();
         }
+
+        public override void Remove(Room entity)
+        {
+            Room room = this.GetEntity(entity.RoomId);
+
+            room.RoomId = entity.RoomId;
+            room.DeletedUserId= entity.DeletedUserId;
+            room.DateDeleted = entity.DateDeleted;
+            room.Removed = entity.Removed;
+
+            this._context.Update(room);
+
+            this._context.SaveChanges();
+        }
     }
 }

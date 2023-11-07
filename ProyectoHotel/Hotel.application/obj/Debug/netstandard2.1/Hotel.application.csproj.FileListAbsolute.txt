@@ -8,3 +8,9 @@ E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\ne
 E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.sourcelink.json
 E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.dll
 E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.pdb
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.domain.dll
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.infraestructure.dll
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.infraestructure.pdb
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.domain.pdb
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.csproj.AssemblyReference.cache
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.csproj.CopyComplete

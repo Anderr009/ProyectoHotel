@@ -1,4 +1,6 @@
 ﻿using hotel.api.Models.Modules.Room;
+using Hotel.application.Contracts;
+using Hotel.application.Dtos.Room;
 using Hotel.domain.Entities;
 using Hotel.domain.Repository;
 using Hotel.infraestructure.Interfaces;
@@ -12,76 +14,72 @@ namespace Hotel.api.Controllers
     [ApiController]
     public class RoomController : ControllerBase
     {
-        private readonly IRoomRepository _roomRepository;
-        public RoomController(IRoomRepository roomRepository)
+        private readonly IRoomService _roomService;
+        public RoomController(IRoomService roomService)
         {
-            this._roomRepository = roomRepository;
+            this._roomService = roomService;
         }
         // GET: api/<RoomController>
         [HttpGet("GetRooms")]
         public IActionResult Get()
         {
 
-            var rooms = this._roomRepository.GetEntities()
-                                            .Select(room => 
-                                            new GetRoomModel() 
-                                            { 
-                                                RoomId = room.RoomId,
-                                                Number = room.Number,
-                                                Detail =  room.Detail,
-                                                Price = room.Price,
-                                            });
-            return Ok(rooms);
+            var result = this._roomService.GetAll();
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
         }
 
         // GET api/<RoomController>/5
         [HttpGet("GetRoom")]
         public IActionResult Get(int id)
         {
-            var room = this._roomRepository.GetEntity(id);
-            return Ok(room);
+            var result = this._roomService.GetById(id);
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
         }
 
         // POST api/<RoomController>
         [HttpPost("SaveRoom")]
-        public IActionResult Post([FromBody] AddRoomModel roomApp)
+        public IActionResult Post([FromBody] RoomDtoAdd roomApp)
         {
-            this._roomRepository.Save(new Room()
+            var result = this._roomService.Add(roomApp);
+            if (!result.Success)
             {
-                CreationUserId = roomApp.ChangeUser,
-                Price = roomApp.Price,
-                State = roomApp.State,
-                CategoryId = roomApp.CategoryId,
-                FloorId = roomApp.CategoryId,
-                RegistrationDate = roomApp.ChangeDate,
-                Number = roomApp.Number,
-                Detail =  roomApp.Detail,
-                RoomStateId = roomApp.RoomStateId,
-            });
+                return BadRequest(result);
+            }
             return Ok();
         }
 
         // PUT api/<RoomController>/5
         [HttpPut("UpdateRoom")]
 
-        public IActionResult Put(int id, [FromBody] UpdateRoomModel roomUpdate  )
+        public IActionResult Put(int id, [FromBody] RoomDtoUpdate roomUpdate  )
         {
-            this._roomRepository.Update(new Room()
+            var result = this._roomService.Update(roomUpdate);
+            if (!result.Success)
             {
-                RoomId = roomUpdate.Id,
-                ModUserId = roomUpdate.ChangeUser,
-                Price = roomUpdate.Price,
-                State = roomUpdate.State,
-                CategoryId = roomUpdate.CategoryId,
-                FloorId = roomUpdate.CategoryId,
-                ModDate = roomUpdate.ChangeDate,
-                Number = roomUpdate.Number,
-                Detail = roomUpdate.Detail,
-                RoomStateId = roomUpdate .RoomStateId,
-            });
+                return BadRequest(result);
+            }
             return Ok();
         }
+        // PUT api/<RoomController>/5
+        [HttpPut("RemoveRoom")]
 
+        public IActionResult Put(int id, [FromBody] RoomDtoRemove roomRemove)
+        {
+            var result = this._roomService.Remove(roomRemove);
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
+            return Ok();
+        }
         //// DELETE api/<RoomController>/5
         //[HttpDelete("{id}")]
         //public void Delete(int id)

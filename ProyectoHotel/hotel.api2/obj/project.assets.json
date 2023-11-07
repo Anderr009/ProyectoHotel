@@ -260,33 +260,39 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection/3.1.32": {
+      "Microsoft.Extensions.DependencyInjection/7.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.32"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll": {
             "related": ".xml"
           }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.32": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "related": ".xml"
           }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Microsoft.Extensions.Logging/3.1.32": {
@@ -1798,6 +1804,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Hotel.application/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Hotel.infraestructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hotel.application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.application.dll": {}
+        }
+      },
       "Hotel.domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -1821,6 +1840,21 @@
         },
         "runtime": {
           "bin/placeholder/Hotel.infraestructure.dll": {}
+        }
+      },
+      "Hotel.Ioc/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Hotel.application": "1.0.0",
+          "Hotel.infraestructure": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hotel.Ioc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Ioc.dll": {}
         }
       }
     }
@@ -2393,38 +2427,62 @@
         "microsoft.extensions.configuration.binder.nuspec"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection/3.1.32": {
-      "sha512": "VUbvtpsoHZf4XtBhsfio0+2cpqC9bJs6ZiApT3G81CwBfcDV5OSeU9SaI6it6wxaGf0K2uADzzIS+4yTADaTRg==",
+    "Microsoft.Extensions.DependencyInjection/7.0.0": {
+      "sha512": "elNeOmkeX3eDVG6pYVeV82p29hr+UKDaBhrZyWvWLw/EVZSYEkZlQdkp0V39k/Xehs2Qa0mvoCvkVj3eQxNQ1Q==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection/3.1.32",
+      "path": "microsoft.extensions.dependencyinjection/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
-        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
-        "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll",
-        "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.xml",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
-        "microsoft.extensions.dependencyinjection.3.1.32.nupkg.sha512",
-        "microsoft.extensions.dependencyinjection.nuspec"
+        "microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.32": {
-      "sha512": "dARl3iAcHZshMvnXtKpLGES4QZq8ExxIQnF2s8pXfP3MJOOXRSBsk+UmA3TMVN4hPr4O2QFS8AMJp9GDD/4lDw==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
+      "sha512": "h3j/QfmFN4S0w4C2A6X7arXij/M/OVw3uQHSOFxnND4DyAzO1F9eMX7Eti7lU/OkSthEE0WzRsfT/Dmx86jzCw==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.32",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.3.1.32.nupkg.sha512",
-        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.Extensions.Logging/3.1.32": {
@@ -6340,6 +6398,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Hotel.application/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.application/Hotel.application.csproj",
+      "msbuildProject": "../Hotel.application/Hotel.application.csproj"
+    },
     "Hotel.domain/1.0.0": {
       "type": "project",
       "path": "../Hotel.domain/Hotel.domain.csproj",
@@ -6349,10 +6412,17 @@
       "type": "project",
       "path": "../Hotel.infraestructure/Hotel.infraestructure.csproj",
       "msbuildProject": "../Hotel.infraestructure/Hotel.infraestructure.csproj"
+    },
+    "Hotel.Ioc/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.loc/Hotel.Ioc.csproj",
+      "msbuildProject": "../Hotel.loc/Hotel.Ioc.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Hotel.Ioc >= 1.0.0",
+      "Hotel.application >= 1.0.0",
       "Hotel.domain >= 1.0.0",
       "Hotel.infraestructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.0-preview.7.23375.9",
@@ -6386,11 +6456,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "E:\\clases\\Prog2\\Final\\ProyectoHotel\\ProyectoHotel\\Hotel.application\\Hotel.application.csproj": {
+              "projectPath": "E:\\clases\\Prog2\\Final\\ProyectoHotel\\ProyectoHotel\\Hotel.application\\Hotel.application.csproj"
+            },
             "E:\\clases\\Prog2\\Final\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj": {
               "projectPath": "E:\\clases\\Prog2\\Final\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj"
             },
             "E:\\clases\\Prog2\\Final\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj": {
               "projectPath": "E:\\clases\\Prog2\\Final\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj"
+            },
+            "E:\\clases\\Prog2\\Final\\ProyectoHotel\\ProyectoHotel\\Hotel.loc\\Hotel.Ioc.csproj": {
+              "projectPath": "E:\\clases\\Prog2\\Final\\ProyectoHotel\\ProyectoHotel\\Hotel.loc\\Hotel.Ioc.csproj"
             }
           }
         }

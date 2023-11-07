@@ -2,6 +2,7 @@ using Hotel.domain.Repository;
 using Hotel.infraestructure.Interfaces;
 using Hotel.infraestructure.Repositories;
 using Hotel.Infraestructure.Context;
+using Hotel.Ioc.Dependencies;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 var builder = WebApplication.CreateBuilder(args);
@@ -11,8 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 //dependencia del contexto 
 builder.Services.AddDbContext<HotelContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("HotelContext")));
 //dependencia repositorios
-builder.Services.AddTransient<IRoomRepository, RoomRepository>();
-
+//dependencias del modulo de habitacion
+builder.Services.AddRoomDependency();
 //dependencia de los appsets
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hotel.domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39ca60fc21ccde4bb578e9a5c97c6812f45446e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hotel.domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hotel.domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

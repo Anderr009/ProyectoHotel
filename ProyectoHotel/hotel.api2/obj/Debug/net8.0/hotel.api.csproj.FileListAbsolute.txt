@@ -63,3 +63,7 @@ E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\hotel.api2\obj\Debug\net8.0\re
 E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\hotel.api2\obj\Debug\net8.0\hotel.api.pdb
 E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\hotel.api2\obj\Debug\net8.0\hotel.api.genruntimeconfig.cache
 E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\hotel.api2\obj\Debug\net8.0\ref\hotel.api.dll
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\hotel.api2\bin\Debug\net8.0\Hotel.Ioc.dll
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\hotel.api2\bin\Debug\net8.0\Hotel.Ioc.pdb
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\hotel.api2\bin\Debug\net8.0\Hotel.application.dll
+E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\hotel.api2\bin\Debug\net8.0\Hotel.application.pdb
