@@ -1779,6 +1779,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Hotel.application/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Hotel.infraestructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hotel.application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.application.dll": {}
+        }
+      },
       "Hotel.domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -1802,6 +1815,21 @@
         },
         "runtime": {
           "bin/placeholder/Hotel.infraestructure.dll": {}
+        }
+      },
+      "Hotel.Ioc/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Hotel.application": "1.0.0",
+          "Hotel.infraestructure": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.32"
+        },
+        "compile": {
+          "bin/placeholder/Hotel.Ioc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Ioc.dll": {}
         }
       }
     }
@@ -6318,6 +6346,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Hotel.application/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.application/Hotel.application.csproj",
+      "msbuildProject": "../Hotel.application/Hotel.application.csproj"
+    },
     "Hotel.domain/1.0.0": {
       "type": "project",
       "path": "../Hotel.domain/Hotel.domain.csproj",
@@ -6327,10 +6360,17 @@
       "type": "project",
       "path": "../Hotel.infraestructure/Hotel.infraestructure.csproj",
       "msbuildProject": "../Hotel.infraestructure/Hotel.infraestructure.csproj"
+    },
+    "Hotel.Ioc/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.loc/Hotel.Ioc.csproj",
+      "msbuildProject": "../Hotel.loc/Hotel.Ioc.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Hotel.Ioc >= 1.0.0",
+      "Hotel.application >= 1.0.0",
       "Hotel.infraestructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -6368,8 +6408,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\fdani\\OneDrive\\Desktop\\Final programacion 2\\ProyectoHotel\\Hotel.application\\Hotel.application.csproj": {
+              "projectPath": "C:\\Users\\fdani\\OneDrive\\Desktop\\Final programacion 2\\ProyectoHotel\\Hotel.application\\Hotel.application.csproj"
+            },
             "C:\\Users\\fdani\\OneDrive\\Desktop\\Final programacion 2\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj": {
               "projectPath": "C:\\Users\\fdani\\OneDrive\\Desktop\\Final programacion 2\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj"
+            },
+            "C:\\Users\\fdani\\OneDrive\\Desktop\\Final programacion 2\\ProyectoHotel\\Hotel.loc\\Hotel.Ioc.csproj": {
+              "projectPath": "C:\\Users\\fdani\\OneDrive\\Desktop\\Final programacion 2\\ProyectoHotel\\Hotel.loc\\Hotel.Ioc.csproj"
             }
           }
         }

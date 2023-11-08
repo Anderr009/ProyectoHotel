@@ -12,7 +12,7 @@ using System.Text;
 
 namespace Hotel.infraestructure.Core
 {
-    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
+    public class BaseRepository<TEntity> : domain.Repository.IBaseRepository<TEntity> where TEntity : class
     {
         private readonly HotelContext context;
         private DbSet<TEntity> entities;
@@ -54,6 +54,10 @@ namespace Hotel.infraestructure.Core
         public virtual void Update(TEntity entity)
         {
             this.entities.Update(entity);
+
         }
     }
 }
+
+
+

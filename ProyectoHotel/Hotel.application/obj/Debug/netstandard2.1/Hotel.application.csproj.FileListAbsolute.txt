@@ -7,3 +7,9 @@ C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.applica
 C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.csproj.CoreCompileInputs.cache
 C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.dll
 C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.pdb
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.domain.dll
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.infraestructure.dll
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.infraestructure.pdb
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.domain.pdb
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.csproj.AssemblyReference.cache
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.csproj.CopyComplete

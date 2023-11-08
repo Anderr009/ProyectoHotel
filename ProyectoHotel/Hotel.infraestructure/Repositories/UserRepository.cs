@@ -1,5 +1,6 @@
 ﻿using Hotel.domain.Entities;
 using Hotel.infraestructure.Core;
+using Hotel.infraestructure.Models;
 using Hotel.Infraestructure.Context;
 using Hotel.Infraestructure.Interfaces;
 using System;
@@ -19,11 +20,6 @@ namespace Hotel.infraestructure.Repositories
             this.context = context;
         }
 
-        public List<User> GetUsersByRole(int UserRoleId)
-        {
-            return this.context.Users.Where(rl => rl.UserRoleId == UserRoleId && !rl.Removed).ToList();
-        }
-
         public override List<User> GetEntities()
         {
             return base.GetEntities().Where(us => !us.Removed).ToList();
@@ -38,17 +34,53 @@ namespace Hotel.infraestructure.Repositories
 
         public override void Update(User entity)
         {
-            var UserUpdate = base.GetEntity(entity.UserID);
-            UserUpdate.FullName = entity.FullName;
-            UserUpdate.Mail = entity.Mail;
-            UserUpdate.UserRoleId = entity.UserRoleId;
-            UserUpdate.Clue = entity.Clue;
-            UserUpdate.State = entity.State;
-            UserUpdate.RegistrationDate = entity.RegistrationDate;
-            UserUpdate.CreationUserId = entity.CreationUserId;
+            User user = base.GetEntity(entity.UserID);
+            user.FullName = entity.FullName;
+            user.Mail = entity.Mail;
+            user.UserRoleId = entity.UserRoleId;
+            user.Clue = entity.Clue;
+            user.State = entity.State;
+            user.ModDate = entity.ModDate;
+            user.ModUserId = entity.ModUserId;
 
-            context.Users.Update(UserUpdate);
+            this.context.Users.Update(user);
+            this.context.SaveChanges();
+        }
+
+        public override void Remove(User entity)
+        {
+            User user = base.GetEntity(entity.UserID);
+
+            user.UserID = entity.UserID;
+            user.Removed = entity.Removed;
+            user.DateDeleted = entity.DateDeleted;
+            user.DeletedUserId = entity.DeletedUserId;
+
+            context.Users.Update(user);
             context.SaveChanges();
         }
+
+        public List<User_RoleModel> GetUsersRole()
+        {
+            var users = (from us in this.GetEntities()
+                         join role in this.context.Roles on us.UserRoleId equals role.UserRoleId
+                         where !us.Removed
+                         select new User_RoleModel
+                         {
+                             UserID = us.UserID,
+                             UserRoleId = us.UserRoleId,
+                             Clue = us.Clue,
+                             Role = role.Description,
+                             CreationDate = us.RegistrationDate
+                         }).ToList();
+            return users;
+        }
+
+        public User_RoleModel GetRole(int roleId)
+        {
+            return this.GetUsersRole().SingleOrDefault(us => us.UserID == roleId);
+        }
+
+        
     }
 }

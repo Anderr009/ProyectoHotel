@@ -61,3 +61,7 @@ C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.api\bin
 C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.api\bin\Debug\net6.0\Hotel.infraestructure.dll
 C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.api\bin\Debug\net6.0\Hotel.infraestructure.pdb
 C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.api\bin\Debug\net6.0\Hotel.domain.pdb
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.api\bin\Debug\net6.0\Hotel.application.dll
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.api\bin\Debug\net6.0\Hotel.Ioc.dll
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.api\bin\Debug\net6.0\Hotel.application.pdb
+C:\Users\fdani\OneDrive\Desktop\Final programacion 2\ProyectoHotel\Hotel.api\bin\Debug\net6.0\Hotel.Ioc.pdb
