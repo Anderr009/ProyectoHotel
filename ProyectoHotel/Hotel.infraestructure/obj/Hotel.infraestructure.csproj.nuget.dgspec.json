@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\benja\\OneDrive\\Desktop\\Proyecto Hotel\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj": {}
+    "C:\\Users\\benja\\OneDrive\\Desktop\\ProyectooHotel\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\benja\\OneDrive\\Desktop\\Proyecto Hotel\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj": {
+    "C:\\Users\\benja\\OneDrive\\Desktop\\ProyectooHotel\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benja\\OneDrive\\Desktop\\Proyecto Hotel\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj",
+        "projectUniqueName": "C:\\Users\\benja\\OneDrive\\Desktop\\ProyectooHotel\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj",
         "projectName": "Hotel.domain",
-        "projectPath": "C:\\Users\\benja\\OneDrive\\Desktop\\Proyecto Hotel\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj",
+        "projectPath": "C:\\Users\\benja\\OneDrive\\Desktop\\ProyectooHotel\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj",
         "packagesPath": "C:\\Users\\benja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benja\\OneDrive\\Desktop\\Proyecto Hotel\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\obj\\",
+        "outputPath": "C:\\Users\\benja\\OneDrive\\Desktop\\ProyectooHotel\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\benja\\OneDrive\\Desktop\\Proyecto Hotel\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj": {
+    "C:\\Users\\benja\\OneDrive\\Desktop\\ProyectooHotel\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benja\\OneDrive\\Desktop\\Proyecto Hotel\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\benja\\OneDrive\\Desktop\\ProyectooHotel\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj",
         "projectName": "Hotel.infraestructure",
-        "projectPath": "C:\\Users\\benja\\OneDrive\\Desktop\\Proyecto Hotel\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj",
+        "projectPath": "C:\\Users\\benja\\OneDrive\\Desktop\\ProyectooHotel\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj",
         "packagesPath": "C:\\Users\\benja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benja\\OneDrive\\Desktop\\Proyecto Hotel\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\obj\\",
+        "outputPath": "C:\\Users\\benja\\OneDrive\\Desktop\\ProyectooHotel\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\benja\\OneDrive\\Desktop\\Proyecto Hotel\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj": {
-                "projectPath": "C:\\Users\\benja\\OneDrive\\Desktop\\Proyecto Hotel\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj"
+              "C:\\Users\\benja\\OneDrive\\Desktop\\ProyectooHotel\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj": {
+                "projectPath": "C:\\Users\\benja\\OneDrive\\Desktop\\ProyectooHotel\\ProyectoHotel\\ProyectoHotel\\Hotel.domain\\Hotel.domain.csproj"
               }
             }
           }

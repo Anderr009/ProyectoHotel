@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DCjWU5Sd6NpJIb5Cp/dZc9xHDkffIYQSYoORfDEjQ4o2bBE/uNpYkZjxjVKJHcOQWTHD4J1avNkLDffhs29eYw==",
+  "dgSpecHash": "7slSqTQbI8s9zTcoVTSWQFj9ex9Z8uFvV85LfoSRv7vTbX4M3abutKaZgZiKS4TFBQgIQU29lP1eplUV+qfTqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\benja\\OneDrive\\Desktop\\Proyecto Hotel\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj",
+  "projectFilePath": "C:\\Users\\benja\\OneDrive\\Desktop\\ProyectooHotel\\ProyectoHotel\\ProyectoHotel\\Hotel.infraestructure\\Hotel.infraestructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\benja\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\benja\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

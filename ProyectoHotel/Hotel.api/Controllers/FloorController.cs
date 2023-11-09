@@ -1,4 +1,6 @@
 ﻿using Hotel.api.Models.Modules.Floor;
+using Hotel.application.Contracts;
+using Hotel.application.Dtos.Floor;
 using Hotel.domain.Core;
 using Hotel.domain.Entities;
 using Hotel.infraestructure.Interfaces;
@@ -13,65 +15,67 @@ namespace Hotel.api.Controllers
     [ApiController]
     public class FloorController : ControllerBase
     {
-        private readonly IFloorRepository FloorRepository;
+        private readonly IFloorService FloorService;
 
-        public FloorController(IFloorRepository FloorRepository)
+        public FloorController(IFloorService FloorService)
         {
-            this.FloorRepository = FloorRepository;
+            this.FloorService = FloorService;
         }
 
         [HttpGet("GetFloors")]
         public IActionResult Get()
         {
-            var Floors = this.FloorRepository.GetEntities().Select(fl => new FloorGetAllModel()
-            {
-                ChangeUser = fl.CreationUserId,
-                ChanageDate = fl.RegistrationDate,
-                State = fl.State,
-                Description = fl.Description,
-                FloorId= fl.FloorId
-                
-            }).ToList();
+            var result = this.FloorService.GetAll();
 
-            return Ok(Floors);
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
         }
 
         [HttpGet("GetFloor")]
         public IActionResult GetFloor(int id)
         {
-            var Floor = this.FloorRepository.GetEntity(id);
-            return Ok(Floor);
+            var result = this.FloorService.GetById(id);
+
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
         }
 
         [HttpPost("SaveFloor")]
         public IActionResult Post([FromBody] FloorAddModel floorAdd)
         {
-            Floor floor = new Floor()
-            {
-                CreationUserId = floorAdd.ChangeUser,
-                RegistrationDate = floorAdd.ChanageDate,
-                State = floorAdd.State,
-                Description = floorAdd.Description
-            };
-            this.FloorRepository.Save(floor);
+            var result = this.FloorService.Save(floorAdd);
 
-            return Ok();
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
         }
 
         [HttpPut("UpdateFloor")]
         public IActionResult Put([FromBody] FloorUpdateModel floorUpdate)
         {
-            Floor floor = new Floor()
-            {
-                CreationUserId = floorUpdate.ChangeUser,
-                RegistrationDate = floorUpdate.ChanageDate,
-                State = floorUpdate.State,
-                Description = floorUpdate.Description,
-                FloorId = floorUpdate.FloorId
-            };
-            this.FloorRepository.Update(floor);
+            var result = this.FloorService.Update(floorUpdate);
 
-            return Ok();
+            if (!result.Success)
+                return BadRequest(result);
+
+            return Ok(result);
+        }
+
+        [HttpPost("RemoveFloor")]
+        public IActionResult Remove([FromBody] FloorDtoRemove floorDtoRemove)
+        {
+            var result = this.FloorService.Remove(floorDtoRemove);
+
+            if (!result.Success)
+                return BadRequest(result);
+
+
+            return Ok(result);
         }
     }
 }
