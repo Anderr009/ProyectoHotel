@@ -63,7 +63,7 @@ namespace Hotel.infraestructure.Repositories
         public List<User_RoleModel> GetUsersRole()
         {
             var users = (from us in this.GetEntities()
-                         join role in this.context.Roles on us.UserRoleId equals role.UserRoleId
+                         join role in this.context.UserRole on us.UserRoleId equals role.UserRoleId
                          where !us.Removed
                          select new User_RoleModel
                          {
