@@ -1,8 +1,12 @@
 ﻿using Hotel.application.Contracts;
 using Hotel.application.Core;
 using Hotel.application.Dtos.Room;
+using Hotel.application.Exceptions;
+using Hotel.Application.Extentions;
 using Hotel.domain.Entities;
 using Hotel.infraestructure.Interfaces;
+using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Linq;
@@ -14,16 +18,25 @@ namespace Hotel.application.Service
         private readonly ILogger _logger;   
         private readonly IRoomRepository _roomRepository;
         public RoomService(IRoomRepository roomRepository,
-                           ILogger<RoomService> logger) 
+                           ILogger<RoomService> logger,
+                           IConfiguration configuration) 
         {
             _logger = logger;
             _roomRepository= roomRepository;
+            Configuration = configuration;
         }
+        public IConfiguration Configuration { get; }
         public ServiceResult Add(RoomDtoAdd dtoAdd)
         {
             ServiceResult result = new ServiceResult();
             try
             {
+                result = dtoAdd.IsRoomValid(Configuration);
+
+                if (!result.Success)
+                {
+                    return result;
+                }
                 Room room = new Room()
                 {
                     RoomId = dtoAdd.userId,
@@ -91,9 +104,12 @@ namespace Hotel.application.Service
         public ServiceResult Remove(RoomDtoRemove dtoRemove)
         {
             ServiceResult result = new ServiceResult();
-
             try
             {
+                //if (!dtoRemove.Removed.HasValue)
+                //{
+                //    throw new RoomServiceException(this.Configuration["MensajeValidaciones:RoomRemoved"]);
+                //}
                 Room room = new Room()
                 {
                     RoomId = dtoRemove.RoomId 
@@ -104,7 +120,14 @@ namespace Hotel.application.Service
                 this._roomRepository.Remove(room);
 
                 result.Message = "";
-            }catch(Exception ex)
+            }
+            catch(RoomServiceException ex)
+            {
+                result.Success = false;
+                result.Message = ex.Message;
+                this._logger.LogError("", ex.Message.ToString());
+            }
+            catch(Exception ex)
             {
                 result.Success = false;
                 result.Message = "$Error removiendo la habitacion.";
@@ -119,6 +142,12 @@ namespace Hotel.application.Service
             ServiceResult result= new ServiceResult();
             try
             {
+                result = dtoUpdate.IsRoomValid(Configuration);
+
+                if (!result.Success)
+                {
+                    return result;
+                }
                 Room room = new Room()
                 {
                     RoomId = dtoUpdate.userId,

@@ -1,6 +1,8 @@
 ﻿using hotel.api.Models.Modules.Room;
 using Hotel.application.Contracts;
+using Hotel.application.Core;
 using Hotel.application.Dtos.Room;
+using Hotel.application.Exceptions;
 using Hotel.domain.Entities;
 using Hotel.domain.Repository;
 using Hotel.infraestructure.Interfaces;
