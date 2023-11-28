@@ -19,22 +19,6 @@ namespace Hotel.api.Controllers
         {
             this.receptionService = receptionService;
         }
-        /*
-        [HttpGet("GetReceptionByClientId")]
-        public IActionResult GetReceptionByClientId(int clientId)
-        {
-            var receptions = this.receptionRepository.GetReceptionByClient(clientId);
-            return Ok(receptions);
-        }
-
-        [HttpGet("GetReceptionByRoomId")]
-        public IActionResult GetReceptionByRoomId(int roomId)
-        {
-            var receptions = this.receptionRepository.GetReceptionByRoom(roomId);
-            return Ok(receptions);
-        }
-        */
-
         // GET: api/<ReceptionController>
         [HttpGet("GetReceptions")]
         public IActionResult Get()
