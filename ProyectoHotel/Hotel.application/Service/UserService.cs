@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Hotel.application.Contract;
 using Hotel.application.Core;
 using Hotel.application.Dtos.User;
+using Hotel.application.Exceptions;
 using Hotel.domain.Entities;
-using Hotel.infraestructure.Interfaces;
 using Hotel.Infraestructure.Interfaces;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 namespace Hotel.application.Service
@@ -16,12 +14,14 @@ namespace Hotel.application.Service
     {
         private readonly IUserRepository userRepository;
         private readonly ILogger<UserService> logger;
+        private readonly IConfiguration configuration;
 
         public UserService(IUserRepository userRepository,
-                            ILogger<UserService> logger)
+                            ILogger<UserService> logger, IConfiguration configuration)
         {
             this.userRepository = userRepository;
             this.logger = logger;
+            this.configuration = configuration;
         }
         public ServiceResult GetAll()
         {
@@ -101,6 +101,33 @@ namespace Hotel.application.Service
             ServiceResult result = new ServiceResult();
             try
             {
+                if (string.IsNullOrEmpty(dtoAdd.FullName))
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:FullNameRequired"]);
+
+                if (dtoAdd.FullName.Length > 50)
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:FullNameLength"]);
+
+                if (string.IsNullOrEmpty(dtoAdd.Mail))
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:MailRequired"]);
+
+                if (dtoAdd.Mail.Length > 50)
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:MailLenght"]);
+
+                if (dtoAdd.UserRoleId == 0)
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:UserRoleIdRequired"]);
+
+                if (dtoAdd.UserRoleId < 0)
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:UserRoleIdPositive"]);
+
+                if (!int.TryParse(dtoAdd.UserRoleId.ToString(), out int userRoleId))
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:UserRoleIdIsInt"]);
+
+                if (string.IsNullOrEmpty(dtoAdd.Clue))
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:ClueRequired"]);
+
+                if (dtoAdd.Clue.Length > 50)
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:ClueLenght"]);
+
                 User user = new User() 
                 {
                     FullName = dtoAdd.FullName,
@@ -114,6 +141,12 @@ namespace Hotel.application.Service
                 this.userRepository.Save(user);
 
                 result.Message = "El usuario ha sido guardado con exito.";
+            }
+            catch (UserServiceExceptions uex)
+            {
+                result.Success = false;
+                result.Message = uex.Message;
+                this.logger.LogError($"{result.Message}", uex.ToString());
             }
             catch (Exception ex)
             {
@@ -129,6 +162,33 @@ namespace Hotel.application.Service
             ServiceResult result = new ServiceResult();
             try
             {
+                if (string.IsNullOrEmpty(dtoUpdate.FullName))
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:FullNameRequired"]);
+
+                if (dtoUpdate.FullName.Length > 50)
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:FullNameLength"]);
+
+                if (string.IsNullOrEmpty(dtoUpdate.Mail))
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:MailRequired"]);
+
+                if (dtoUpdate.Mail.Length > 50)
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:MailLenght"]);
+
+                if (dtoUpdate.UserRoleId == 0)
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:UserRoleIdRequired"]);
+
+                if (dtoUpdate.UserRoleId < 0)
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:UserRoleIdPositive"]);
+
+                if (!int.TryParse(dtoUpdate.UserRoleId.ToString(), out int userRoleId))
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:UserRoleIdIsInt"]);
+
+                if (string.IsNullOrEmpty(dtoUpdate.Clue))
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:ClueRequired"]);
+
+                if (dtoUpdate.Clue.Length > 50)
+                    throw new UserServiceExceptions(this.configuration["ValidationMessages:ClueLenght"]);
+
                 User user = new User()
                 {
                     FullName = dtoUpdate.FullName,
@@ -142,6 +202,12 @@ namespace Hotel.application.Service
                 this.userRepository.Update(user);
 
                 result.Message = "El usuario ha sido actualizado con exito.";
+            }
+            catch (UserServiceExceptions uex)
+            {
+                result.Success = false;
+                result.Message = uex.Message;
+                this.logger.LogError($"{result.Message}", uex.ToString());
             }
             catch (Exception ex)
             {
