@@ -1,0 +1,65 @@
+﻿@model Hotel.web.Models.Response.RoomViewModel
+@{
+    ViewData["Title"] = "Edit";
+}
+<h1>Crear habitacion</h1>
+
+<div class="row">
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label">Id</label>
+                    <input asp-for="roomId" class="form-control" readonly>
+                    <span asp-validation-for="roomId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Price</label>
+                    <input asp-for="price" class="form-control" >
+                    <span asp-validation-for="price" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Detail</label>
+                    <input asp-for="detail" class="form-control" >
+                    <span asp-validation-for="detail" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">RoomStateId</label>
+                    <input asp-for="roomStateId" class="form-control" >
+                    <span asp-validation-for="roomStateId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">RoomState</label>
+                    <input asp-for="roomState" class="form-control" >
+                    <span asp-validation-for="roomState" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Foor id</label>
+                    <input asp-for="floorId" class="form-control" >
+                    <span asp-validation-for="floorId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Floor</label>
+                    <input asp-for="floor" class="form-control" >
+                    <span asp-validation-for="floor" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Category id</label>
+                    <input asp-for="categoryId" class="form-control" >
+                    <span asp-validation-for="categoryId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Category</label>
+                    <input asp-for="category" class="form-control" >
+                    <span asp-validation-for="category" class="text-danger"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to list</a>
+</div>

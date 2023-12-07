@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Hotel.web.Models.Response.RoomViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Habitaciones</h1>
+
+<p>
+    <a asp-action="Create">Create new</a>
+</p>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.detail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.roomStateId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.roomState)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.floorId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.floor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.categoryId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.category)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem=>item.number)</td>
+
+                <td>@Html.DisplayFor(modelItem=> item.detail)</td>
+
+                <td>@Html.DisplayFor(modelItem=> item.price)</td>
+
+                <td>@Html.DisplayFor(modelItem=> item.roomStateId)</td>
+
+                <td>@Html.DisplayFor(modelItem=> item.roomState)</td>
+
+                <td>@Html.DisplayFor(modelItem=> item.floorId)</td>
+
+                <td>@Html.DisplayFor(modelItem=> item.floor)</td>
+
+                <td>@Html.DisplayFor(modelItem=> item.categoryId)</td>
+
+                <td>@Html.DisplayFor(modelItem=> item.category)</td>
+            </tr>
+        <td>
+                @Html.ActionLink("Edit","Edit",new {id = item.roomId})
+                @Html.ActionLink("Details","Details", new{id=item.roomId})
+        </td>
+        }
+    </tbody>
+</table>

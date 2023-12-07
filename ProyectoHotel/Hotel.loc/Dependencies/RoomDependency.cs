@@ -14,5 +14,7 @@ namespace Hotel.Ioc.Dependencies
             service.AddTransient<IRoomService, RoomService>();
 
         }
+
+  
     }
 }

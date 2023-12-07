@@ -1,8 +1,0 @@
-E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.GeneratedMSBuildEditorConfig.editorconfig
-E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.AssemblyInfoInputs.cache
-E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.AssemblyInfo.cs
-E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.csproj.CoreCompileInputs.cache
-E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.MvcApplicationPartsAssemblyInfo.cache
-E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.RazorAssemblyInfo.cache
-E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.RazorAssemblyInfo.cs
-E:\clases\Prog2\Final\ProyectoHotel\ProyectoHotel\Hotel.web\obj\Debug\net6.0\Hotel.web.sourcelink.json

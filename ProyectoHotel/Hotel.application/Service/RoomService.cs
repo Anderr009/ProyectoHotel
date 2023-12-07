@@ -66,6 +66,7 @@ namespace Hotel.application.Service
                 var rooms = _roomRepository.GetEntities()
                                             .Where(room => !room.Removed)
                                             .Select(co => new RoomDtoGet() {
+                                                RoomId = co.RoomId,
                                                 Number = co.Number,
                                                 Detail = co.Detail,
                                                 Price = co.Price,
