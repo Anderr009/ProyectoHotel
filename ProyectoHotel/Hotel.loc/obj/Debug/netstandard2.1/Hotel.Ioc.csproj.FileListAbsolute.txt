@@ -1,0 +1,17 @@
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.Ioc.deps.json
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.Ioc.dll
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.Ioc.pdb
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.application.dll
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.domain.dll
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.infraestructure.dll
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.application.pdb
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.infraestructure.pdb
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\bin\Debug\netstandard2.1\Hotel.domain.pdb
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.csproj.AssemblyReference.cache
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.AssemblyInfoInputs.cache
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.AssemblyInfo.cs
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.csproj.CoreCompileInputs.cache
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.csproj.CopyComplete
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.dll
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.loc\obj\Debug\netstandard2.1\Hotel.Ioc.pdb

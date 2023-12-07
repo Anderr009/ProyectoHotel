@@ -8,6 +8,7 @@ namespace Hotel.application.Dtos.RoUser
     public class RolUserDtoBase : DtoBase
     {
         public int UserRoleId { get; set; }
+        public string Description { get; set; }
         public bool? State { get; set; }
         public DateTime RegistrationDate { get; set; }
         public int CreationUserId { get; set; }

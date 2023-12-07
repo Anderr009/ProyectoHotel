@@ -35,7 +35,7 @@ namespace Hotel.application.Services
 
             try
             {
-                var floors = this.FloorRepository.GetEntities().Select(fl => new FloorDtoGetAll()
+                var floors = this.FloorRepository.GetEntities().Where(x=>x.Removed == false).Select(fl => new FloorDtoGetAll()
                 {
                     FloorId = fl.FloorId,
                     State = fl.State,
@@ -123,24 +123,11 @@ namespace Hotel.application.Services
 
                 //Validaciones
 
-                if (dtoAdd.FloorId <= 0)
-                {
-                    result.Message = this.configuration["MensajeValidacionesFloor:FloorValorFloor"];
-                    result.Success = false;
-                    return result;
-                }
-
-
-                if (dtoAdd.RegistrationDate >= dtoAdd.RegistrationDate)
-                {
-                    result.Message = this.configuration["MensajeValidacionesFloor:FloorValorRegistrationDate"];
-                    result.Success = false;
-                    return result;
-                }
+               
 
                 Floor floor = new Floor()
                 {
-                    FloorId = dtoAdd.FloorId,
+                    //FloorId = null,
                     State = dtoAdd.State,
                     RegistrationDate = dtoAdd.RegistrationDate,
                     CreationUserId = dtoAdd.CreationUserId,
@@ -178,13 +165,6 @@ namespace Hotel.application.Services
                 if (dtoUpdate.FloorId <= 0)
                 {
                     result.Message = this.configuration["MensajeValidacionesFloor:FloorValorFloor"];
-                    result.Success = false;
-                    return result;
-                }
-
-                if (dtoUpdate.RegistrationDate >= dtoUpdate.RegistrationDate)
-                {
-                    result.Message = this.configuration["MensajeValidacionesFloor:FloorValorRegistrationDate"];
                     result.Success = false;
                     return result;
                 }

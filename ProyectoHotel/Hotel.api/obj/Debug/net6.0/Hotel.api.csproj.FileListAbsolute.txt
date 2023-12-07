@@ -124,3 +124,7 @@ C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel
 C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.api\obj\Debug\net6.0\Hotel.api.pdb
 C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.api\obj\Debug\net6.0\Hotel.api.genruntimeconfig.cache
 C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.api\obj\Debug\net6.0\ref\Hotel.api.dll
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.api\bin\Debug\net6.0\Hotel.application.dll
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.api\bin\Debug\net6.0\Hotel.application.pdb
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.api\bin\Debug\net6.0\Hotel.Ioc.dll
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.api\bin\Debug\net6.0\Hotel.Ioc.pdb

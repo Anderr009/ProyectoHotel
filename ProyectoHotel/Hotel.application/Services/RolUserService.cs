@@ -4,6 +4,7 @@ using Hotel.application.Dtos.Floor;
 using Hotel.application.Dtos.Reception;
 using Hotel.application.Dtos.RoUser;
 using Hotel.application.Response;
+using Hotel.domain.Core;
 using Hotel.domain.Entities;
 using Hotel.infraestructure.Interfaces;
 using Microsoft.Extensions.Configuration;
@@ -15,7 +16,7 @@ using System.Text;
 
 namespace Hotel.application.Services
 {
-    public class RolUserService
+    public class RolUserService: IRolUserService
     {
             private readonly IRolUserRepository RolUserRepository;
             private readonly ILogger<RolUserService> logger;
@@ -36,7 +37,7 @@ namespace Hotel.application.Services
 
                 try
                 {
-                    var floors = this.RolUserRepository.GetEntities().Select(ru => new RolUserDtoGetAll()
+                    var floors = this.RolUserRepository.GetEntities().Where(x=>x.Removed == false).Select(ru => new RolUserDtoGetAll()
                     {
                         UserRoleId = ru.UserRoleId,
                         State = ru.State,
@@ -46,7 +47,8 @@ namespace Hotel.application.Services
                         ModUserId = ru.ModUserId,
                         DeletedUserId = ru.DeletedUserId,
                         DateDeleted = ru.DateDeleted,
-                        Removed = ru.Removed
+                        Removed = ru.Removed,
+                        Description = ru.Description.ToString()
                     }); ;
                     result.Data = floors;
                 }
@@ -76,7 +78,8 @@ namespace Hotel.application.Services
                         ModUserId = RolUser.ModUserId,
                         DeletedUserId = RolUser.DeletedUserId,
                         DateDeleted = RolUser.DateDeleted,
-                        Removed = RolUser.Removed
+                        Removed = RolUser.Removed,
+                        Description = RolUser.Description.ToString()
                     };
                     result.Data = RolUserModel;
                 }
@@ -124,23 +127,24 @@ namespace Hotel.application.Services
 
                     //Validaciones
 
-                    if (dtoAdd.UserRoleId <= 0)
-                    {
-                        result.Message = this.configuration["MensajeValidacionesRolUser:RolUserValorUserRole"];
-                        result.Success = false;
-                        return result;
-                    }
+                    //if (dtoAdd.UserRoleId <= 0)
+                    //{
+                    //    result.Message = this.configuration["MensajeValidacionesRolUser:RolUserValorUserRole"];
+                    //    result.Success = false;
+                    //    return result;
+                    //}
 
 
-                    if (dtoAdd.RegistrationDate >= dtoAdd.RegistrationDate)
-                    {
-                        result.Message = this.configuration["MensajeValidaciones:RolUserValorRegistrationDate"];
-                        result.Success = false;
-                        return result;
-                    }
+                    //if (dtoAdd.RegistrationDate >= dtoAdd.RegistrationDate)
+                    //{
+                    //    result.Message = this.configuration["MensajeValidaciones:RolUserValorRegistrationDate"];
+                    //    result.Success = false;
+                    //    return result;
+                    //}
 
                     RolUser rolUser = new RolUser()
                     {
+                        Description = dtoAdd.Description,
                         UserRoleId = dtoAdd.UserRoleId,
                         State = dtoAdd.State,
                         RegistrationDate = dtoAdd.RegistrationDate,
@@ -183,15 +187,16 @@ namespace Hotel.application.Services
                         return result;
                     }
 
-                    if (dtoUpdate.RegistrationDate >= dtoUpdate.RegistrationDate)
-                    {
-                        result.Message = this.configuration["MensajeValidacionesRolUser:FloorValorRegistrationDate"];
-                        result.Success = false;
-                        return result;
-                    }
+                    //if (dtoUpdate.RegistrationDate >= dtoUpdate.RegistrationDate)
+                    //{
+                    //    result.Message = this.configuration["MensajeValidacionesRolUser:FloorValorRegistrationDate"];
+                    //    result.Success = false;
+                    //    return result;
+                    //}
 
                     RolUser rolUser = new RolUser()
                     {
+                        Description = dtoUpdate.Description,
                         UserRoleId = dtoUpdate.UserRoleId,
                         State = dtoUpdate.State,
                         RegistrationDate = dtoUpdate.RegistrationDate,

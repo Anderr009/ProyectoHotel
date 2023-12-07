@@ -45,7 +45,7 @@ namespace Hotel.api.Controllers
         }
 
         [HttpPost("SaveRolUser")]
-        public IActionResult Post([FromBody] RolUserAddModel rolUserAdd)
+        public IActionResult Post([FromBody] RolUserDtoAdd rolUserAdd)
         {
             var result = this.RolUserService.Save(rolUserAdd);
 
@@ -56,7 +56,7 @@ namespace Hotel.api.Controllers
         }
 
         [HttpPut("UpdateRolUser")]
-        public IActionResult Put([FromBody] RolUserUpdateModel roluserUpdate)
+        public IActionResult Put([FromBody] RolUserDtoUpdate roluserUpdate)
         {
             var result = this.RolUserService.Update(roluserUpdate);
 
@@ -66,7 +66,7 @@ namespace Hotel.api.Controllers
             return Ok(result);
         }
 
-        [HttpPost("RemoveReception")]
+        [HttpPost("RemoveRolUser")]
         public IActionResult Remove([FromBody] RolUserDtoRemove roluserDtoRemove)
         {
             var result = this.RolUserService.Remove(roluserDtoRemove);

@@ -1,0 +1,15 @@
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.application.deps.json
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.application.dll
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.application.pdb
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.domain.dll
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.infraestructure.dll
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.infraestructure.pdb
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\bin\Debug\netstandard2.1\Hotel.domain.pdb
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.csproj.AssemblyReference.cache
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.AssemblyInfoInputs.cache
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.AssemblyInfo.cs
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.csproj.CoreCompileInputs.cache
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.csproj.CopyComplete
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.dll
+C:\Users\benja\OneDrive\Desktop\ProyectooHotel\ProyectoHotel\ProyectoHotel\Hotel.application\obj\Debug\netstandard2.1\Hotel.application.pdb

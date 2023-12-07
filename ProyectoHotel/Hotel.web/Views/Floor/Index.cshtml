@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Hotel.Web.Models.Responses.FloorViewResult>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Pisos</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.floorId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.state)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.registrationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.creationUserId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.floorId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.state)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.registrationDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.creationUserId)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.floorId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.floorId })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.floorId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

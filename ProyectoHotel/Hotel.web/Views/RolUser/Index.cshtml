@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Hotel.Web.Models.Responses.RolUserViewResult>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>RolUser</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.userRoleId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.state)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.registrationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.creationUserId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.userRoleId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.state)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.registrationDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.creationUserId)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.userRoleId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.userRoleId })|
+                    @Html.ActionLink("Delete", "Delete", new { id = item.userRoleId }) |
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

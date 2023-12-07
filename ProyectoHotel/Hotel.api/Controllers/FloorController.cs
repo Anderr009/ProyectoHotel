@@ -1,6 +1,7 @@
 ﻿using Hotel.api.Models.Modules.Floor;
 using Hotel.application.Contracts;
 using Hotel.application.Dtos.Floor;
+using Hotel.application.Dtos.Reception;
 using Hotel.domain.Core;
 using Hotel.domain.Entities;
 using Hotel.infraestructure.Interfaces;
@@ -45,7 +46,7 @@ namespace Hotel.api.Controllers
         }
 
         [HttpPost("SaveFloor")]
-        public IActionResult Post([FromBody] FloorAddModel floorAdd)
+        public IActionResult Post([FromBody] FloorDtoAdd floorAdd)
         {
             var result = this.FloorService.Save(floorAdd);
 
@@ -56,7 +57,7 @@ namespace Hotel.api.Controllers
         }
 
         [HttpPut("UpdateFloor")]
-        public IActionResult Put([FromBody] FloorUpdateModel floorUpdate)
+        public IActionResult Put([FromBody] FloorDtoUpdate floorUpdate)
         {
             var result = this.FloorService.Update(floorUpdate);
 

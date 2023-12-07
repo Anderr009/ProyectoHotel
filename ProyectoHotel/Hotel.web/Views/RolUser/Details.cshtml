@@ -1,0 +1,50 @@
+﻿@model Hotel.Web.Models.Responses.RolUserViewResult
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Ver Rol de Usuario</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Details">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label">Codigo</label>
+                <input asp-for="userRoleId" class="form-control" readonly />
+                <span asp-validation-for="userRoleId" class="text-danger"></span>
+            </div>
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label">Description</label>
+                <input asp-for="description" class="form-control" readonly />
+                <span asp-validation-for="description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label"> State</label>
+                <input asp-for="state" class="form-control" readonly />
+                <span asp-validation-for="state" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Registration Date</label>
+                <input asp-for="registrationDate" class="form-control" readonly />
+                <span asp-validation-for="registrationDate" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -41,5 +41,16 @@ namespace Hotel.infraestructure.Repositories
             context.Floors.Update(floorUpdate);
             context.SaveChanges();
         }
+
+        public override void Remove(Floor entity)
+        {
+
+            var floorUpdate = base.GetEntity(entity.FloorId);
+            floorUpdate.DeletedUserId = 1;
+            floorUpdate.Removed = true;
+            //var Flood = context.Floors.FirstOrDefault(x => x.FloorId == entity.FloorId);
+            context.Floors.Update(floorUpdate);
+            context.SaveChanges();
+        }
     }
 }
