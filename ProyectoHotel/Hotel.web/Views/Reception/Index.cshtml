@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Hotel.application.Dtos.Reception.ReceptionDtoGetAll>
+﻿@model IEnumerable<Hotel.web.Models.Response.ReceptionViewResult>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,43 +13,43 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ClientId)
+                @Html.DisplayNameFor(model => model.clientId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.RoomId)
+                @Html.DisplayNameFor(model => model.roomId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.EntryDate)
+                @Html.DisplayNameFor(model => model.entryDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DepartureDate)
+                @Html.DisplayNameFor(model => model.departureDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ConfirmationDepartureDate)
+                @Html.DisplayNameFor(model => model.confirmationDepartureDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.StartingPrice)
+                @Html.DisplayNameFor(model => model.startingPrice)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Advancement)
+                @Html.DisplayNameFor(model => model.advancement)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.RemainingPrice)
+                @Html.DisplayNameFor(model => model.remainingPrice)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TotalPaid)
+                @Html.DisplayNameFor(model => model.totalPaid)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CostPenalty)
+                @Html.DisplayNameFor(model => model.costPenalty)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Observation)
+                @Html.DisplayNameFor(model => model.observation)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.State)
+                @Html.DisplayNameFor(model => model.state)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.RegistrationDate)
+                @Html.DisplayNameFor(model => model.registrationDate)
             </th>
             <th></th>
         </tr>
@@ -58,47 +58,47 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ClientId)
+                @Html.DisplayFor(modelItem => item.clientId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.RoomId)
+                @Html.DisplayFor(modelItem => item.roomId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.EntryDate)
+                @Html.DisplayFor(modelItem => item.entryDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DepartureDate)
+                @Html.DisplayFor(modelItem => item.departureDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ConfirmationDepartureDate)
+                @Html.DisplayFor(modelItem => item.confirmationDepartureDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.StartingPrice)
+                @Html.DisplayFor(modelItem => item.startingPrice)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Advancement)
+                @Html.DisplayFor(modelItem => item.advancement)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.RemainingPrice)
+                @Html.DisplayFor(modelItem => item.remainingPrice)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TotalPaid)
+                @Html.DisplayFor(modelItem => item.totalPaid)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CostPenalty)
+                @Html.DisplayFor(modelItem => item.costPenalty)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Observation)
+                @Html.DisplayFor(modelItem => item.observation)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.State)
+                @Html.DisplayFor(modelItem => item.state)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.RegistrationDate)
+                @Html.DisplayFor(modelItem => item.registrationDate)
             </td>
             <td>
-                    @Html.ActionLink("Edit", "Edit", new { id=item.ReceptionId }) |
-                    @Html.ActionLink("Details", "Details", new { id=item.ReceptionId })
+                    @Html.ActionLink("Edit", "Edit", new { id=item.receptionId }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.receptionId })
             </td>
         </tr>
 }

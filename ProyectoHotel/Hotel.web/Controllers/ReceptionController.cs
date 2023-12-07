@@ -1,14 +1,18 @@
 ﻿using Hotel.application.Contracts;
 using Hotel.application.Core;
 using Hotel.application.Dtos.Reception;
+using Hotel.web.Models.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace Hotel.web.Controllers
 {
     public class ReceptionController : Controller
     {
         private readonly IReceptionService receptionService;
+
+        HttpClientHandler clientHandler = new HttpClientHandler();
         public ReceptionController(IReceptionService receptionService) 
         {
             this.receptionService = receptionService;
@@ -16,28 +20,63 @@ namespace Hotel.web.Controllers
         // GET: ReceptionController
         public ActionResult Index()
         {
-            var result = this.receptionService.GetAll();
+            ReceptionListResponse receptionList = new ReceptionListResponse();
 
-            if (!result.Success)
-            { 
-                ViewBag.Message= result.Message;
-                return View();
+            using(var client = new HttpClient(this.clientHandler))
+            {
+                using (var response = client.GetAsync("http://localhost:5274/api/Reception/GetReceptions").Result)
+                {
+                    if(response.IsSuccessStatusCode)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+
+                        receptionList = JsonConvert.DeserializeObject<ReceptionListResponse>(apiResponse);
+
+                        if(!receptionList.success)
+                        {
+                            ViewBag.Message = receptionList.message;
+                            return View();
+                        }
+                            
+                    }
+                    else
+                    {
+                        receptionList.message = "Error conectandose al api.";
+                        receptionList.success = false;
+                        ViewBag.Message = receptionList.message;
+                        return View();
+                    }
+                }
             }
-            return View(result.Data);
+
+            return View(receptionList.data);
 
         }
 
         // GET: ReceptionController/Details/5
         public ActionResult Details(int id)
         {
-            var result = this.receptionService.GetById(id);
+            ReceptionDetailResponse receptionDetailResponse = new ReceptionDetailResponse();
 
-            if (!result.Success)
+            using (var client = new HttpClient(this.clientHandler))
             {
-                ViewBag.Message = result.Message;
-                return View();
+
+                var url = $"http://localhost:5274/api/Reception/GetReception?id={ id }";
+                using (var response = client.GetAsync(url).Result)
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+
+                        receptionDetailResponse = JsonConvert.DeserializeObject<ReceptionDetailResponse>(apiResponse);
+
+                        if (receptionDetailResponse.success)
+                            ViewBag.Message = receptionDetailResponse.message;
+                    }
+                }
             }
-            return View(result.Data);
+
+            return View(receptionDetailResponse.data);
         }
 
         // GET: ReceptionController/Create
@@ -51,22 +90,48 @@ namespace Hotel.web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(ReceptionDtoAdd receptionDtoAdd)
         {
-            ServiceResult result = new ServiceResult();
+            BaseResponse baseResponse = new BaseResponse();
             try
             {
-                result = this.receptionService.Save(receptionDtoAdd);
-
-                if(!result.Success)
+                using (var client = new HttpClient(this.clientHandler))
                 {
-                    ViewBag.Message = result.Message;
-                    return View();
+
+                    var url = $"http://localhost:5274/api/Reception/SaveReception";
+
+                    receptionDtoAdd.ChangeDate = DateTime.Now;
+                    receptionDtoAdd.ChangeUser = 1;
+
+                    StringContent content = new StringContent(JsonConvert.SerializeObject(receptionDtoAdd), System.Text.Encoding.UTF8, "application/json");
+
+                    using (var response = client.PostAsync(url, content).Result)
+                    {
+                        if (response.IsSuccessStatusCode)
+                        {
+                            string apiResponse = response.Content.ReadAsStringAsync().Result;
+
+                            baseResponse = JsonConvert.DeserializeObject<BaseResponse>(apiResponse);
+
+                            if (!baseResponse.success)
+                            {
+                                ViewBag.Message = baseResponse.message;
+                                return View();
+                            }
+                        }
+                        else
+                        {
+                            baseResponse.message = "Error conectandose al api.";
+                            baseResponse.success = false;
+                            ViewBag.Message = baseResponse.message;
+                            return View();
+                        }
+                    }
                 }
 
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                ViewBag.Message = result.Message;
+                ViewBag.Message = baseResponse.message;
                 return View();
             }
         }
@@ -74,60 +139,78 @@ namespace Hotel.web.Controllers
         // GET: ReceptionController/Edit/5
         public ActionResult Edit(int id)
         {
-            var result = this.receptionService.GetById(id);
+            ReceptionDetailResponse receptionDetailResponse = new ReceptionDetailResponse();
 
-            if (!result.Success)
+            using (var client = new HttpClient(this.clientHandler))
             {
-                ViewBag.Message = result.Message;
-                return View();
+
+                var url = $"http://localhost:5274/api/Reception/GetReception?id={id}";
+                using (var response = client.GetAsync(url).Result)
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+
+                        receptionDetailResponse = JsonConvert.DeserializeObject<ReceptionDetailResponse>(apiResponse);
+                    }
+                }
             }
 
-            var datos = (ReceptionDtoGetAll)result.Data;
-            ReceptionDtoUpdate receptionDto = new ReceptionDtoUpdate() 
-            { 
-                ReceptionId = datos.ReceptionId, 
-                ClientId = datos.ClientId,
-                RoomId = datos.RoomId,
-                EntryDate = datos.EntryDate,
-                DepartureDate = datos.DepartureDate,
-                ConfirmationDepartureDate = datos.ConfirmationDepartureDate,
-                StartingPrice = datos.StartingPrice,
-                Advancement = datos.Advancement,
-                RemainingPrice = datos.RemainingPrice,
-                TotalPaid = datos.TotalPaid,
-                CostPenalty = datos.CostPenalty,
-                Observation = datos.Observation,
-                State = datos.State,
-            };
-
-            return View(receptionDto);
+            return View(receptionDetailResponse.data);
         }
+    
 
         // POST: ReceptionController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(ReceptionDtoUpdate receptionDtoUpdate)
         {
-            ServiceResult result = new ServiceResult();
+            BaseResponse baseResponse = new BaseResponse();
 
             try
             {
-                result = this.receptionService.Update(receptionDtoUpdate);
 
-                if (!result.Success)
+                using (var client = new HttpClient(this.clientHandler))
                 {
-                    ViewBag.Message = result.Message;
-                    return View();
+
+                    var url = $"http://localhost:5274/api/Reception/UpdateReception";
+
+                    receptionDtoUpdate.ChangeDate = DateTime.Now;
+                    receptionDtoUpdate.ChangeUser = 1;
+
+                    StringContent content = new StringContent(JsonConvert.SerializeObject(receptionDtoUpdate),System.Text.Encoding.UTF8,"application/json");
+
+                    using (var response = client.PostAsync(url,content).Result)
+                    {
+                        if (response.IsSuccessStatusCode)
+                        {
+                            string apiResponse = response.Content.ReadAsStringAsync().Result;
+
+                            baseResponse = JsonConvert.DeserializeObject<BaseResponse>(apiResponse);
+
+                            if(!baseResponse.success)
+                            {
+                                ViewBag.Message = baseResponse.message;
+                                return View();
+                            }
+                        }
+                        else
+                        {
+                            ViewBag.Message = baseResponse.message;
+                            return View();
+                        }
+                    }
                 }
+
                 return RedirectToAction(nameof(Index));
+
             }
             catch
             {
-                ViewBag.Message = result.Message;
+                ViewBag.Message = baseResponse.message;
                 return View();
             }
         }
 
-        
     }
 }
