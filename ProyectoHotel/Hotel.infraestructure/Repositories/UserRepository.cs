@@ -68,10 +68,12 @@ namespace Hotel.infraestructure.Repositories
                          select new User_RoleModel
                          {
                              UserID = us.UserID,
+                             FullName = us.FullName,
+                             Mail = us.Mail,
                              UserRoleId = us.UserRoleId,
                              Clue = us.Clue,
                              Role = role.Description,
-                             CreationDate = us.RegistrationDate
+                             RegistratonDate = us.RegistrationDate
                          }).ToList();
             return users;
         }

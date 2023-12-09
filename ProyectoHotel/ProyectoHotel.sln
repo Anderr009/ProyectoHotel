@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Ioc", "Hotel.loc\Hote
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.infraestructure", "Hotel.infraestructure\Hotel.infraestructure.csproj", "{EB7C5003-4299-47CD-9164-CB994CFA924D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.api", "Hotel.api\Hotel.api.csproj", "{9984D194-6DB9-4735-B87F-2AE77039D3C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.api", "Hotel.api\Hotel.api.csproj", "{9984D194-6DB9-4735-B87F-2AE77039D3C2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{5505AC48-D335-4339-9E0A-7FF5FFD7DC45}"
 EndProject
