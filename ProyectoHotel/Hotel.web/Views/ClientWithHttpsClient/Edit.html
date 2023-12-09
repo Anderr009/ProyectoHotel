@@ -1,0 +1,45 @@
+﻿﻿@model Hotel.web.Models.Response.ClientViewModel
+@{
+    ViewData["Title"] = "Edit";
+}
+<h1>Crear habitacion</h1>
+
+<div class="row">
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label">Id</label>
+                    <input asp-for="roomId" class="form-control" readonly>
+                    <span asp-validation-for="clientId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Nombre Completo</label>
+                    <input asp-for="price" class="form-control">
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Email</label>
+                    <input asp-for="detail" class="form-control">
+                    <span asp-validation-for="Mail" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Document</label>
+                    <input asp-for="roomStateId" class="form-control">
+                    <span asp-validation-for="Document" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Document Type</label>
+                    <input asp-for="roomState" class="form-control">
+                    <span asp-validation-for="DocumentType" class="text-danger"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to list</a>
+</div>

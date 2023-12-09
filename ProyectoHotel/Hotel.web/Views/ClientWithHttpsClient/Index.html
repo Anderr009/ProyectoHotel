@@ -1,0 +1,47 @@
+﻿﻿@model IEnumerable<Hotel.web.Models.Response.ClientViewModel>
+
+    @{
+    ViewData["Title"] = "Index";
+    }
+
+    <h1>Habitaciones</h1>
+
+    <p>
+        <a asp-action="Create">Create new</a>
+    </p>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DocumentType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Document)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Mail)
+                </th>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@Html.DisplayFor(modelItem=>item.DocumentType)</td>
+
+                <td>@Html.DisplayFor(modelItem=> item.Document)</td>
+
+                <td>@Html.DisplayFor(modelItem=> item.Status)</td>
+
+                <td>@Html.DisplayFor(modelItem=> item.Mail)</td>
+        <td>
+            @Html.ActionLink("Edit","Edit",new {id = item.clientId})
+            @Html.ActionLink("Details","Details", new{id=item.clientId})
+        </td>
+        }
+        </tbody>
+    </table>
